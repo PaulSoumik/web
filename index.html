@@ -50,7 +50,7 @@ body{
 .banner-section .owl-carousel .owl-stage{
 	height: 100vh!important;
 }
-    ul.speakers-type-list{
+ul.speakers-type-list{
         position: relative;
         float: right;
         right: 55px;
@@ -61,78 +61,162 @@ body{
         text-align: center;
         display: block;
         background: rgba(255,255,255,0.3);
-    }
-    ul.speakers-type-list li{   
+}
+ul.speakers-type-list li{   
         list-style: none;
         font-size: 20px;
         cursor: pointer;
         padding: 5px;
         transition: all 0.2s ease-in-out;
-    }
-    ul.speakers-type-list .speakers-active:hover li{
+}
+ul.speakers-type-list .speakers-active:hover li{
         display: block !important;
-    }
-    .speakers-active{
+}
+.speakers-active{
         display: block !important;
         font-size: 23px!important;
         color: #12114a!important;
         
-    }
-    .auto-container .row .speaker-block-two{
+}
+.auto-container .row .speaker-block-two{
         transition: all 0.3s ease-in-out;
     }
-    .auto-container .row{
+.auto-container .row{
         transition: all 0.3s ease-in-out;
     }
-    .speaker-block-two .image img{
+.speaker-block-two .image img{
         transition: all 0.2s ease-in-out
     }
-    .speaker-block-two .image-box .image{
+.speaker-block-two .image-box .image{
     	
     }
-    .events-section{
+.events-section{
     	background-color: rgb(18, 17, 74)!important;
     	padding-top: 30px;
     }
-    .events-carousel .content-column .text{
+.events-carousel .content-column .text{
     	color: #fff;
+
     }
-    .Countdown-timer{
+.Countdown-timer{
     	width: 100%;
     	background-color: transparent!important;
     	font-size: 36px;
     	text-align: center;
     	
-    	color: #f20487;
+    	color: #fff;
     	font-weight: lighter;
     	
     }
-    .Countdown-timer span{
+.Countdown-timer span{
     	
     }
-    .Countdown-timer span.countdown-inner-container{
-    	margin-right: -56px;
+.Countdown-timer span.countdown-inner-container{
+    	
     	display: grid;
     	grid-template-rows: 1fr 1fr;
     	grid-gap: 25px;
     }
 
-    .Countdown-timer span span.countdown-inner-container span{
+.Countdown-timer span span.countdown-inner-container span{
     	padding: 0!important;
     	margin: 0!important;
     
-    	padding-right: 8px!important;
-    	padding-left: 8px!important;
+    	
 
 
     	
     }
-    .Countdown-timer span span.countdown-inner-container .number-part{
+.Countdown-timer span span.countdown-inner-container .number-part{
     	font-weight: 800;
     	font-size: 70px;
     }
+
+
+
+
+
+
+
+
+
+.banner-section .slide-item{
+	padding: 0!important;
+}
+
+
+
+@media only screen and (max-width: 1366px){
+	.banner-section .slide-item{
+		padding: 0!important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .banner-section .content-box .text{
+ 	
+ 	padding-left: 30px!important;
+ }
+ .banner-section .content-box .btn-box{
+ 	margin-left: 30px;
+ }
+
+ .banner-section .content-box{
+    	transform: translateY(-50%);
+    margin-top: 37% !important;
+    }
+
+@media only screen and (max-width: 1040px){
+    .banner-section .content-box{
+    	transform: translateY(-50%);
+        margin-top: 48% !important;
+    }
+    .banner-section .content-box .btn-box{
+ 	    margin-left: 0px;
+    }
+
+
+    .banner-section .content-box {
+        width: 100%;
+        text-align: center;
+    }
+
+ @media only screen and (min-width: 930px){
+ 	
+      .banner-section .content-box .text{
+ 	       font-size: 33px;
+ 	       padding-left: 0px;
+       }
+
+
+
+
+ }
+
+}
+
+
+@media only screen and (max-width: 767px){
+    .banner-section .content-box{
+    	
+        margin-top: 63% !important;
+    }
+}
+
     
-  @media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px){
     ul.speakers-type-list{
         display: flex;
         flex-wrap: wrap;
@@ -159,7 +243,7 @@ body{
     .mycontainer .icon.icon-circle-2{
     	opacity: 0.001 !important;
     }
-  }
+}
 </style>
 <!--End Personalised Styles-->
 
@@ -359,13 +443,24 @@ body{
     </section>-->
     <!--End Hidden Bar -->
 
+    
+
     <!-- Bnner Section -->
     <section class="banner-section">
         <div class="banner-carousel owl-carousel owl-theme">
-            <div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.3)), url(images/main-slider/6.jpg); background-size: cover;">
-                <div class="auto-container">
+        	<div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.3)), url(images/main-slider/banner1.jpg); background-size: cover;">
+                <div class="auto-container clearfix">
+                	
                     <div class="content-box">
-                        <h2>TechX</h2>
+                    	<div class="jumbotron Countdown-timer" id="Countdown-timer">
+    						<span style="white-space: nowrap;display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;">
+    							<span class="countdown-inner-container" style=""><span class="number-part" id="days"></span><span>days</span></span>
+    							<span class="countdown-inner-container"><span class="number-part" id="hours"></span><span>hours</span></span>
+    							<span class="countdown-inner-container"><span class="number-part" id="minutes"></span><span>minutes</span></span>
+    							<span class="countdown-inner-container"><span class="number-part" id="seconds"></span><span>seconds</span></span>
+    						</span>
+    					</div>
+                        
                         <div class="text">Kolkata Section Computer Society Students and Young Professional Congress</div>
                         <div class="btn-box clearfixr">
                             <a href="#" class="theme-btn btn-style-two">Stay Tuned!</a>
@@ -373,11 +468,11 @@ body{
                     </div>
                 </div>
             </div>
-
-            <div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.3)), url(images/main-slider/7.jpg); background-size: cover;">
-                <div class="auto-container clearfix">
+       
+            <div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.3)), url(images/main-slider/banner2.jpg); background-size: cover;">
+                <div class="auto-container">
                     <div class="content-box">
-                        <h2>TechX</h2>
+                        
                         <div class="text">Kolkata Section Computer Society Students and Young Professional Congress</div>
                         <div class="btn-box clearfixr">
                             <a href="#" class="theme-btn btn-style-two">Stay Tuned!</a>
@@ -389,7 +484,20 @@ body{
             <div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.3)), url(images/main-slider/8.jpg); background-size: cover;">
                 <div class="auto-container clearfix">
                     <div class="content-box">
-                        <h2>TechX</h2>
+                        
+                        <div class="text">Kolkata Section Computer Society Students and Young Professional Congress</div>
+                        <div class="btn-box clearfixr">
+                            <a href="#" class="theme-btn btn-style-two">Stay Tuned!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.3)), url(images/main-slider/banner4.jpg); background-size: cover;">
+                <div class="auto-container clearfix">
+                	
+                    <div class="content-box">
+                        
                         <div class="text">Kolkata Section Computer Society Students and Young Professional Congress</div>
                         <div class="btn-box clearfixr">
                             <a href="#" class="theme-btn btn-style-two">Stay Tuned!</a>
@@ -402,6 +510,7 @@ body{
     <!-- End Bnner Section -->
 
 
+<!--
 
     <section class="mycontainer" style="width:100%;background-color: rgb(18, 17, 74)!important;">
     	<span style="position: relative;">
@@ -425,7 +534,7 @@ body{
     	<span class="countdown-inner-container"><span class="number-part" id="minutes"></span><span>minutes</span></span>
     	<span class="countdown-inner-container"><span class="number-part" id="seconds"></span><span>seconds</span></span>
     	</span>
-    </div></section>
+    </div></section>-->
 
 
 
@@ -471,7 +580,7 @@ body{
                 <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="icon"><img src="images/resource/feature-2-3.png" alt=""></div>
-                        <h4><a href="#">Product Analysis</a></h4>
+                        <h4><a href="#">Hands-on experiences</a></h4>
                         <!--<div class="text">Ex vim lorem homero. Te sit mutat graece deserunt ea has. Sumo</div>-->
                     </div>
                 </div>
@@ -480,7 +589,7 @@ body{
                 <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
                     <div class="inner-box">
                         <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
-                        <h4><a href="#">Questionnaire</a></h4>
+                        <h4><a href="#">Innovative Challenges</a></h4>
                         <!--<div class="text">Ex vim lorem homero. Te sit mutat graece deserunt ea has. Sumo</div>-->
                     </div>
                 </div>
@@ -525,7 +634,7 @@ body{
 
                                 <div class="info-box time">
                                     <span class="icon flaticon-clock-1"></span>
-                                    <div class="text"> 8:00 am  5:00 pm</div>
+                                    <div class="text"> To be announced</div>
                                 </div>
                             </div>
                         </div>
@@ -560,7 +669,7 @@ body{
 
                                 <div class="info-box time">
                                     <span class="icon flaticon-clock-1"></span>
-                                    <div class="text"> 8:00 am  5:00 pm</div>
+                                    <div class="text">To be announced</div>
                                 </div>
                             </div>
                         </div>
@@ -595,7 +704,7 @@ body{
 
                                 <div class="info-box time">
                                     <span class="icon flaticon-clock-1"></span>
-                                    <div class="text"> 8:00 am  5:00 pm</div>
+                                    <div class="text">To be announced</div>
                                 </div>
                             </div>
                         </div>
@@ -1086,6 +1195,23 @@ body{
     </section>
     <!--End Event Highlight -->
 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Speakers Section -->
    
 
@@ -1115,6 +1241,14 @@ body{
         <!-- End speakers division-->        
 
             <div class="row">
+
+
+
+
+
+
+
+
                 <!-- Feature Block -->
                 <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow zoomIn Leadershipis">
                     <div class="image-box">
@@ -1174,10 +1308,24 @@ body{
                     </div>
                 </div>
 
+                
+
+
+
+
+
+
+
+
+
+
+
+                
+                <!--speaker block start-->
                 <!-- Feature Block -->
                 <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow zoomIn Networking">
                     <div class="image-box">
-                        <figure class="image"><img src="images/resource/Subodh3.jpg" alt=""></figure>
+                        <figure class="image"><img src="images/resource/subodh3.jpg" alt=""></figure>
                         <div class="overlay-box">
                             <a href="#popup_2" class="link view-speaker ts-image-popup" data-effect="mfp-zoom-in"><span class="flaticon-add-1"></span></a>
                             <div class="info">
@@ -1186,13 +1334,14 @@ body{
                             </div>
                         </div>
                     </div>
+                    <!-- Feature Block end -->
 
                     <!-- popup start-->
                     <div id="popup_2" class="container ts-speaker-popup mfp-hide">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="ts-speaker-popup-img">
-                                    <img src="images/resource/Subodh3.jpg" alt="">
+                                    <img src="images/resource/subodh3.jpg" alt="">
                                 </div>
                             </div><!-- col end-->
                             <div class="col-lg-6">
@@ -1226,11 +1375,20 @@ body{
                                         <a href="https://twitter.com/subodhgajare?lang=en"><i class="fab fa-twitter"></i></a>
                                         <a href="https://www.linkedin.com/in/subodhgajare/?originalSubdomain=in"><i class="fab fa-linkedin"></i></a>
                                     </div>
-                                </div><!-- ts-speaker-popup-content end-->
+                                </div>
+                                <!-- ts-speaker-popup-content end-->
                             </div>
                         </div>
                     </div>
+                    <!-- popup end-->
+
+
+
+
                 </div>
+
+
+                <!--speaker block end-->
 
                 
                 
@@ -1243,6 +1401,21 @@ body{
     <!--End Speakers Section -->
 
     <!--End Speakers Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Pricing Section -->
     <!--<section class="pricing-section style-four">
@@ -1411,22 +1584,22 @@ body{
         <div class="auto-container">
             <div class="row">
                 <div class="client-logo col-lg-3 col-md-6 col-sm-12">
-                    <figure class="image"><a href="#"><img src="images/clients/IEEE_kol_logo.png" width="200" height="70" alt=""></a></figure>
+                    <figure class="image"><a href="http://ewh.ieee.org/r10/calcutta/"><img src="images/clients/IEEE_kol_logo.png" width="200" height="70" alt="IEEE Kolkata Section"></a></figure>
                 </div>
                 <div class="client-logo col-lg-3 col-md-6 col-sm-12">
-                    <figure class="image"><a href="#"><img src="images/clients/3.png" width="200" height="70" alt=""></a></figure>
+                    <figure class="image"><a href="https://www.computer.org/"><img src="images/clients/3.png" width="200" height="70" alt="IEEE Computer Society"></a></figure>
                 </div>
                 <!--<div class="client-logo col-lg-3 col-md-6 col-sm-12">
                     <figure class="image"><a href="#"><img src="images/clients/4.png" width="200" height="70" alt=""></a></figure>
                 </div>-->
                 <div class="client-logo col-lg-3 col-md-6 col-sm-12">
-                    <figure class="image"><a href="#"><img src="images/clients/sb1.png" width="200" height="70" alt=""></a></figure>
+                    <figure class="image"><a href="https://site.ieee.org/sb-nitdgp/"><img src="images/clients/sb1.png" width="200" height="70" alt="IEEE SB NITD"></a></figure>
                 </div>
                 <div class="client-logo col-lg-3 col-md-6 col-sm-12">
-                    <figure class="image"><a href="#"><img src="images/clients/sb_logo.png" width="200" height="70" alt=""></a></figure>
+                    <figure class="image"><a href="https://ieee.jaduniv.org/"><img src="images/clients/sb_logo.png" width="200" height="70" alt="IEEE JU SB"></a></figure>
                 </div>
                 <div class="client-logo col-lg-3 col-md-6 col-sm-12">
-                    <figure class="image"><a href="#"><img src="images/clients/4.png" width="200" height="70" alt=""></a></figure>
+                    <figure class="image"><a href="https://www.townscript.com/"><img src="images/clients/4.png" width="200" height="70" alt="Townscript"></a></figure>
                 </div>
                 <!--<div class="client-logo col-lg-3 col-md-6 col-sm-12">
                     <figure class="image"><a href="#"><img src="images/clients/3-7.png" alt=""></a></figure>
@@ -1669,15 +1842,15 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("days").innerHTML = days +"     ";
-  document.getElementById("hours").innerHTML = hours+"     ";
-  document.getElementById("minutes").innerHTML = minutes+"     ";
-  document.getElementById("seconds").innerHTML =seconds+"  ";
+  document.getElementById("days").innerHTML = days +"";
+  document.getElementById("hours").innerHTML = hours+"";
+  document.getElementById("minutes").innerHTML = minutes+"";
+  document.getElementById("seconds").innerHTML =seconds+"";
     
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("days").innerHTML = "EXPIRED";
   }
 }, 1000);
 </script>
