@@ -134,8 +134,44 @@ ul.speakers-type-list .speakers-active:hover li{
 
 
 
+.location-section .owl-carousel .owl-item img{
+	width: 50%;
+	height: auto;
+	margin:0 auto;
+}
 
+.location-section .owl-nav{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	margin-top: -25px;
+}
 
+.location-section .owl-next,
+.location-section .owl-prev{
+	position: absolute;
+	left: 60px;
+	top: 0;
+	font-size: 30px;
+	line-height: 50px;
+	color: #12114a;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+.location-section .owl-next{
+	left: auto;
+	right: 60px;
+}
+
+.location-section .owl-next:hover,
+.location-section .owl-prev:hover{
+	color: #f20487;
+}
 
 
 
@@ -331,7 +367,7 @@ ul.speakers-type-list .speakers-active:hover li{
                                                         <li><i class="flaticon-avatar"></i><a href="project.html">Project</a></li>
                                                         <li><i class="flaticon-avatar"></i><a href="shop.html">Shop</a></li>
                                                         <li><i class="flaticon-avatar"></i><a href="shop-single.html">Shop Single</a></li>
-                                                        <li><i class="flaticon-avatar"></i><a href="contact.html">Contact</a></li>
+                                                        <li><i class="flaticon-avatar"></i><a href="register.html">Contact</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -339,7 +375,7 @@ ul.speakers-type-list .speakers-active:hover li{
                                     <!-- </li> -->
                                     <li><a href="#sch">Schedule</a></li>
                                     <li><a href="#speakers-section">Speakers</a></li>
-                                    <li><a href="contact.html">Register</a></li>
+                                    <li><a href="register.html">Register</a></li>
                                     <li><a href="#spns">Sponsors</a></li>
                                     <!-- <li class="dropdown"><a href="#">Blog</a>
                                         <ul>
@@ -407,7 +443,7 @@ ul.speakers-type-list .speakers-active:hover li{
             
             
             <div class="appointment-form">
-                <form method="post" action="http://sitetemplate.demo.ithemeslab.com/fizcon/contact.html">
+                <form method="post" action="http://sitetemplate.demo.ithemeslab.com/fizcon/register.html">
                     <div class="form-group">
                         <input type="text" name="text" value="" placeholder="Name" required>
                     </div>
@@ -506,6 +542,8 @@ ul.speakers-type-list .speakers-active:hover li{
                     </div>
                 </div>
             </div>
+            
+
         </div>
     </section>
     <!-- End Bnner Section -->
@@ -739,7 +777,7 @@ ul.speakers-type-list .speakers-active:hover li{
                             <span class="title">Research & Concept</span>  
                             <h3>Pixel Pioneers Belfast 2019</h3>
                             <div class="text">Pixel Pioneers, a one-day conference for web and UX designers and front-end developers, will take place on the 23rd of November 2019 in Belfast.</div>
-                            <div class="btn-box"><a href="contact.html" class="theme-btn btn-style-one">Register Now</a></div>
+                            <div class="btn-box"><a href="register.html" class="theme-btn btn-style-one">Register Now</a></div>
                         </div> 
                     </div>
                 </div>
@@ -754,7 +792,7 @@ ul.speakers-type-list .speakers-active:hover li{
                             <span class="title">Research & Concept</span>  
                             <h3>Pixel Pioneers Belfast 2019</h3>
                             <div class="text">Pixel Pioneers, a one-day conference for web and UX designers and front-end developers, will take place on the 23rd of November 2019 in Belfast.</div>
-                            <div class="btn-box"><a href="contact.html" class="theme-btn btn-style-one">Register Now</a></div>
+                            <div class="btn-box"><a href="register.html" class="theme-btn btn-style-one">Register Now</a></div>
                         </div> 
                     </div>
                 </div>
@@ -1419,57 +1457,41 @@ ul.speakers-type-list .speakers-active:hover li{
 
 
 
+
+<!-- Bnner Section -->
     <section class="location-section" id="ven">
-      <div class="sec-title" align="center">
+    	<div class="sec-title" align="center">
           <h2>Suncity Resort, Mandarmani</h2>
       </div>
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-<!-- Indicators -->
-<ol class="carousel-indicators">
-  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-  <li data-target="#myCarousel" data-slide-to="1"></li>
-  <li data-target="#myCarousel" data-slide-to="2"></li>
-  <li data-target="#myCarousel" data-slide-to="3"></li>
-  <li data-target="#myCarousel" data-slide-to="4"></li>
-</ol>
+        <div class="banner-carousel owl-carousel owl-theme">
+        	<div class="slide-item" style=" background-size: cover;">
+        		<img src="images/gallery/pic1.jpg" alt="Mandarmani">
+                
+            </div>
+       
+            <div class="slide-item" style=" background-size: cover;">
+            	<img src="images/gallery/pic2.jpg" alt="Mandarmani">
+                
+            </div>
 
-<!-- Wrapper for slides -->
-<div class="carousel-inner">
-  <div class="item active">
-    <img src="images/gallery/pic1.jpg" alt="Los Angeles">
-  </div>
+            <div class="slide-item" style=" background-size: cover;">
+            	 <img src="images/gallery/pic3.jpg" alt="Mandarmani">
+               
+            </div>
 
-  <div class="item">
-    <img src="images/gallery/pic2.jpg" alt="Chicago">
-  </div>
-
-  <div class="item">
-    <img src="images/gallery/pic3.jpg" alt="New York">
-  </div>
-
-  <div class="item">
-    <img src="images/gallery/pic4.jpeg" alt="New York">
-  </div>
-
-  <div class="item">
-    <img src="images/gallery/pic5.jpg" alt="New York">
-  </div>
-</div>
-
-<!-- Left and right controls -->
-<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-  <span class="glyphicon glyphicon-chevron-left"></span>
-  <span class="sr-only">Previous</span>
-</a>
-<a class="right carousel-control" href="#myCarousel" data-slide="next">
-  <span class="glyphicon glyphicon-chevron-right"></span>
-  <span class="sr-only">Next</span>
-</a>
-</div>
-
+            <div class="slide-item" style=" background-size: cover;">
+            	 <img src="images/gallery/pic4.jpg" alt="Mandarmani">
+                
+            </div>
+            <div class="slide-item" style=" background-size: cover;">
+            	 <img src="images/gallery/pic5.jpg" alt="Mandarmani">
+                
+            </div>
+           
+        </div>
 
     </section>
-
+    <!-- End Bnner Section -->
 
 
 
@@ -1514,7 +1536,7 @@ ul.speakers-type-list .speakers-active:hover li{
                             <li>T-shirts, Goodies and Networking</li>
                         </ul>
                         <div class="btn-box">
-                            <a href="contact.html" class="theme-btn">Register Now</a>
+                            <a href="register.html" class="theme-btn">Register Now</a>
                         </div>
                     </div>
                 </div>
@@ -1532,7 +1554,7 @@ ul.speakers-type-list .speakers-active:hover li{
                             <li>T-shirts, Goodies and Networking</li>
                         </ul>
                         <div class="btn-box">
-                            <a href="contact.html" class="theme-btn">Register Now</a>
+                            <a href="register.html" class="theme-btn">Register Now</a>
                         </div>
                     </div>
                 </div>
@@ -1550,7 +1572,7 @@ ul.speakers-type-list .speakers-active:hover li{
                             <li>T-shirts, Goodies and Networking</li>
                         </ul>
                         <div class="btn-box">
-                            <a href="contact.html" class="theme-btn">Register Now</a>
+                            <a href="register.html" class="theme-btn">Register Now</a>
                         </div>
                     </div>
                 </div>
@@ -1589,7 +1611,7 @@ ul.speakers-type-list .speakers-active:hover li{
                             <li>T-shirts, Goodies and Networking</li>
                         </ul>
                         <div class="btn-box">
-                            <a href="contact.html" class="theme-btn">Yet to start</a>
+                            <a href="register.html" class="theme-btn">Yet to start</a>
                         </div>
                     </div>
                 </div>
@@ -1607,7 +1629,7 @@ ul.speakers-type-list .speakers-active:hover li{
                             <li>T-shirts, Goodies and Networking</li>
                         </ul>
                         <div class="btn-box">
-                            <a href="contact.html" class="theme-btn">Yet to start</a>
+                            <a href="register.html" class="theme-btn">Yet to start</a>
                         </div>
                     </div>
                 </div>
@@ -1625,7 +1647,7 @@ ul.speakers-type-list .speakers-active:hover li{
                             <li>T-shirts, Goodies and Networking</li>
                         </ul>
                         <div class="btn-box">
-                            <a href="contact.html" class="theme-btn">Yet to start</a>
+                            <a href="register.html" class="theme-btn">Yet to start</a>
                         </div>
                     </div>
                 </div>
