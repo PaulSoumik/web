@@ -16,7 +16,7 @@
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 <!--Personalised Styles-->
@@ -72,6 +72,10 @@ body{
 }
 .init-dialogue{
 	display: none;
+	font-family: 'Roboto', sans-serif  !important;
+}
+.init-content-dialogue{
+	font-family: 'Roboto', sans-serif !important;
 }
 .atinit{
 	 background-color: transparent !important;
@@ -318,7 +322,7 @@ body{
 
 .banner-section{
 	width: 100vw;
-	background:linear-gradient(to bottom , rgba(18, 17, 74,0.4) , rgba(	18, 17, 74,0.9)),url(images/gallery/background.svg) ,linear-gradient(to left , #12114a , #12114a); background-size: cover;
+	background:linear-gradient(to bottom , rgba(18, 17, 74,0.4) , rgba(	18, 17, 74,0.9)),url(images/gallery/background.svg) ,linear-gradient(to left , #12114a , #12114a); background-size: 120%;
 	background-attachment: fixed;
 	height: 100vh !important;
 	overflow: hidden;
@@ -897,7 +901,7 @@ ul.speakers-type-list .speakers-active:hover li{
                     	<div class="logo"><a href="#"><img style="width: 90vw;" src="images/logo-techx.png" height="40" width="130" alt="" title=""></a></div>
                     </div>
                     <br>
-                    <span class="init-content-dialogue Lower" style="text-decoration: unset;font-size: 29px; color: #f2048a;">Technology. Leadership. Innovation.<br></span>
+                    <span class="init-content-dialogue Lower" style="text-decoration: unset;font-size: 18px; color: #f2048a;">Technology. Leadership. Innovation.<br></span>
     	</div>
         <!--<div class="banner-carousel owl-carousel owl-theme">
         	<div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.4)),url(images/gallery/background.svg) ,linear-gradient(to left , #12114a , #12114a); background-size: cover;">
@@ -2722,6 +2726,14 @@ $('.button').on('click', function() {
 
 
 });
+</script>
+<script type="text/javascript">
+	$(window).mousemove(function(e){
+
+		xpos = e.pageX;
+		ypos = e.pageY;
+		$(".banner-section").css("background-position",-xpos/26+"px "+"-"+ypos/20+"px")
+	})
 </script>
 </body>
 
