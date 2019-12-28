@@ -247,29 +247,6 @@ body{
 
 
 
-@media only screen and (max-width: 1040px){
-	.topic-section{
-		height: unset!important;
-	}
-	.topic-container{
-		grid-template-rows: 1fr 1fr!important;
-		grid-template-columns: unset!important;
-	}
-	.list .inner-column .info-box{
-		font-size: 17px!important;
-	}
-	.slides .button{
-		font-size: 20px!important;
-	}
-
-	.list .inner-column .info-box span{
-		padding: 0px!important;
-		height: 50px!important;
-		width: 50px!important;
-		padding-top: 16px!important;
-		text-align: center!important;
-	}
-}
 
 
 /*////////end topic section/////////*/
@@ -290,15 +267,33 @@ body{
 
 
 
+.banner-section .content-box{
+	transition: all 0.4s ease-in-out;
+	transition-delay: 0.001s;
+}
+.banner-section .content-box.scrolled-top{
+	margin-left: unset!important;
+	margin-top: -20vh !important;
+	opacity: 0;
+}
 
 
 
+.banner-section .content-box.scrolled-top .logo-box{
+	/*margin-top: -30vh;
+	margin-left: -119px;*/
 
+}
+.banner-section .content-box.scrolled-top .init-content-dialogue.Upper{
+	margin-top: -20vh !important;
+}
+.banner-section .content-box.scrolled-top .init-content-dialogue.Lower{
+	margin-top: -20vh !important;
+}
 
-
-
-
-
+.banner-section .content-box.scrolled-top .text{
+	margin-top: -20vh!important;
+}
 
 
 
@@ -464,6 +459,24 @@ ul.speakers-type-list .speakers-active:hover li{
 
 
 
+.sponsor-section.style-three .client-logo img{
+	max-height: 103px;
+	width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .location-section{
@@ -599,6 +612,15 @@ ul.speakers-type-list .speakers-active:hover li{
 
 
 
+@media only screen and (min-width: 1040px){
+	.init-content-dialogue.Upper{
+		font-size: 46px !important;
+	}
+	.init-content-dialogue.Lower{
+		font-size: 24px !important;
+	}
+
+	})
 
 
 
@@ -613,9 +635,13 @@ ul.speakers-type-list .speakers-active:hover li{
  }
 
  .banner-section .content-box{
-    	transform: translateY(-50%);
-    margin-top: 37% !important;
+   
+    margin-top: 30% !important;
     background-color: transparent !important;
+
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
     }
 
 @media only screen and (max-width: 1040px){
@@ -631,6 +657,7 @@ ul.speakers-type-list .speakers-active:hover li{
 
     .banner-section .content-box {
         width: 100%;
+        margin-left: 0px;
         background-color: transparent !important;
         text-align: center;
     }
@@ -686,6 +713,58 @@ ul.speakers-type-list .speakers-active:hover li{
     	opacity: 0.001 !important;
     }
 }
+
+
+
+@media only screen and (max-width: 1040px){
+	.topic-section{
+		height: unset!important;
+	}
+	.topic-container{
+
+		grid-template-rows: 1fr 0.5fr!important;
+		grid-template-columns: unset!important;
+	}
+	.list .inner-column .info-box{
+		font-size: 17px!important;
+	}
+	.slides .button{
+		font-size: 20px!important;
+	}
+
+	.list .inner-column .info-box span{
+		padding: 0px!important;
+		height: 50px!important;
+		width: 50px!important;
+		padding-top: 16px!important;
+		text-align: center!important;
+	}
+	.slides .itemslide img{
+	max-width: 100%;
+	margin: 0 auto;
+    }
+    .slides .itemslide{
+      width: 100%;
+      margin: 0 auto;
+    }
+    .slides .button{
+    	color: #fff!important;
+    }
+    .countdown-inner-container::before {
+    content: "";
+    height: 60px;
+    width: 60px;
+    display: block;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    background-color: #f20487;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+.jumbotron.Countdown-timer{
+	padding: 4rem 1rem;
+}
+}
 </style>
 <!--End Personalised Styles-->
 
@@ -725,113 +804,26 @@ ul.speakers-type-list .speakers-active:hover li{
 							<div class="navbar-collapse collapse scroll-nav clearfix" id="navbarSupportedContent">
 								<ul class="navigation clearfix">
                                     <li class="current dropdown"><a href="#">Home</a>
-                                        <!--<ul>
-                                            <li><a href="index-2.html">Home page 01</a></li>
-                                            <li><a href="index-3.html">Home page 02</a></li>
-                                            <li><a href="index-4.html">Home page 03</a></li>
-                                            <li><a href="index-5.html">Home page 04</a></li>
-                                        </ul>-->
+                                     
                                     </li>
                                     <li class="dropdown"><a href="about.html">About</a>
-                                        <!--<ul>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="pricing.html">Pricing</a></li>
-                                            <li><a href="login.html">login</a></li>
-                                            <li><a href="sign-up.html">Sign Up</a></li>
-                                            <li><a href="coming-soon.html">Coming Soon</a></li>
-                                        </ul>-->
+                                        
                                     </li>
-<!--                                     <li class="dropdown has-mega-menu"><a href="#">Pages</a>
-                                        <div class="mega-menu">
-                                            <div class="mega-menu-bar row no-gutters">
-                                                <div class="column col-lg-3 col-md-3 col-sm-12"> -->
-                                                    <!-- <ul>
-                                                        <li><i class="flaticon-avatar"></i><a href="index-2.html">Home page 01</a></li>
-                                                        <li><i class="flaticon-avatar"></i><a href="index-3.html">Home page 02</a></li>
-                                                        <li><i class="flaticon-avatar"></i><a href="index-4.html">Home page 03</a></li>
-                                                        <li><i class="flaticon-avatar"></i><a href="index-5.html">Home page 04</a></li>
-                                                    </ul> -->
-                                                <!-- </div>
-                                                <div class="column col-lg-3 col-md-3 col-sm-12">
-                                                    <ul>
-                                                        <li><i class="flaticon-avatar"></i><a href="about.html">About</a></li>
-                                                        <li><i class="flaticon-avatar"></i><a href="pricing.html">Pricing</a></li>
-                                                        <li><i class="flaticon-avatar"></i><a href="login.html">login</a></li>
-                                                        <li><i class="flaticon-avatar"></i><a href="sign-up.html">Sign Up</a></li>
-                                                        <li><i class="flaticon-avatar"></i><a href="coming-soon.html">Coming Soon</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="column col-lg-3 col-md-3 col-sm-12">
-                                                    <ul>
-                                                        <li><i class="flaticon-avatar"></i><a href="blog.html">Blog</a></li>
-                                                        <li><i class="flaticon-avatar"></i><a href="blog-single.html">Blog Single</a></li>
-                                                        <li><i class="flaticon-avatar"></i><a href="speakers.html">Speakers</a></li>
-                                                        <li><i class="flaticon-avatar"></i><a href="schedule.html">Schedule</a></li>
-                                                        <li><i class="flaticon-avatar"></i><a href="error-page.html">404 Page</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="column col-lg-3 col-md-3 col-sm-12">
-                                                    <ul>
-                                                        <li><i class="flaticon-avatar"></i><a href="event-venue.html">Event Venue</a></li>
-                                                        <li><i class="flaticon-avatar"></i><a href="project.html">Project</a></li>
-                                                        <li><i class="flaticon-avatar"></i><a href="shop.html">Shop</a></li>
-                                                        <li><i class="flaticon-avatar"></i><a href="shop-single.html">Shop Single</a></li>
-                                                        <li><i class="flaticon-avatar"></i><a href="register.html">Contact</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div> -->
-                                    <!-- </li> -->
+
+                                    
                                     <li><a href="#sch">Schedule</a></li>
                                     <li><a href="#speakers-section">Speakers</a></li>
                                     <li><a href="register.html">Register</a></li>
                                     <li><a href="#spns">Sponsors</a></li>
-                                    <!-- <li class="dropdown"><a href="#">Blog</a>
-                                        <ul>
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-single.html">Blog Single</a></li>
-                                        </ul>
-                                    </li> -->
+                                   
                                     <li><a href="#footer">Contact</a></li>
                                 </ul>
 							</div>
 						</nav>
 						
-						<!-- btn box -->
-						<!-- <div class="btn-box"> -->
-                            <!-- Cart button -->
-                            <!-- <div class="cart-btn"> -->
-                                <!-- <a href="shopping-cart.html"><span class="icon flaticon-shopping-cart-1"></span></a> -->
-                            <!-- </div> -->
-
-                            <!--Search Box-->
-                            <!-- <div class="search-box-outer">
-                                <div class="dropdown">
-                                    <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flaticon-search-1"></span></button>
-                                    <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
-                                        <li class="panel-outer">
-                                            <div class="form-container">
-                                                <form method="post" action="http://sitetemplate.demo.ithemeslab.com/fizcon/blog.html">
-                                                    <div class="form-group">
-                                                        <input type="search" name="field-name" value="" placeholder="Search Here" required>
-                                                        <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-						</div>
- -->
+			
 					</div>
-					<!--Outer Box-->
-					<!--<div class="outer-box">
-                        
-                        <div class="nav-toggler">
-	                        <button class="nav-btn"><span class="icon flaticon-arrows"></span></button>
-	                    </div>
-					</div>-->
+					
                 </div>
             </div>
         </div>
@@ -839,55 +831,6 @@ ul.speakers-type-list .speakers-active:hover li{
     </header>
     <!--End Main Header -->
 
-    <!--Form Back Drop-->
-    <!--<div class="form-back-drop"></div>-->
-    
-    <!-- Hidden Bar -->
-    <!--<section class="hidden-bar">
-        <div class="inner-box">
-            <div class="cross-icon"><span class="fa fa-times"></span></div>
-            <div class="title">
-                <h2>Get Appointment</h2>
-            </div>
-            
-            
-            <div class="appointment-form">
-                <form method="post" action="http://sitetemplate.demo.ithemeslab.com/fizcon/register.html">
-                    <div class="form-group">
-                        <input type="text" name="text" value="" placeholder="Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" value="" placeholder="Email Address" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="phone" value="" placeholder="Phone no." required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="theme-btn btn-style-one">Submit now</button>
-                    </div>
-                </form>
-            </div>
-            
-            
-            <div class="contact-info-box">
-                <ul class="info-list">
-                    <li><a href="http://sitetemplate.demo.ithemeslab.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="debdb1b0aabfbdaa9eb8b7a4bdb1b0f0bdb1b3">[email&#160;protected]</a></li>
-                    <li>+(123) 456 7890</li>
-                </ul>
-                <ul class="social-list clearfix">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Linkedin</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Google +</a></li>
-                    <li><a href="#">Instagram</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>-->
-    <!--End Hidden Bar -->
 
     
 
@@ -895,11 +838,14 @@ ul.speakers-type-list .speakers-active:hover li{
     <section class="banner-section">
 
 
+
     	<div class="content-box" style="">
     		<span class="init-content-dialogue Upper" style="font-size: 29px; color: #f2048a; ">Get ready for<br></span>
                 	<div class="logo-box">
                     	<div class="logo"><a href="#"><img style="width: 90vw;" src="images/logo-techx.png" height="40" width="130" alt="" title=""></a></div>
                     </div>
+                    <br>
+                    <span class="text">Eastern India Techno-Management Summit</span>
                     <br>
                     <span class="init-content-dialogue Lower" style="text-decoration: unset;font-size: 18px; color: #f2048a;">Technology. Leadership. Innovation.<br></span>
     	</div>
@@ -1017,7 +963,7 @@ ul.speakers-type-list .speakers-active:hover li{
                     <div class="inner-box">
                         <div class="icon"><img src="images/resource/feature-2-1.png" alt=""></div>
                         <h4><a href="#">Industry Speakers</a></h4>
-                        <!--<div class="text">Ex vim lorem homero. Te sit mutat graece deserunt ea has. Sumo</div>-->
+                        <div class="text">Learn from the leading experts at Intel, Google, Cisco, IEEE and more.</div>
                     </div>
                 </div>
 
@@ -1232,7 +1178,7 @@ ul.speakers-type-list .speakers-active:hover li{
                                         <div class="text">
                                             <p>IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity . IEEE and its members inspire a global community through its highly cited publications, conferences, technology standards, and professional and educational activities.</p>
 
-                                            <div class="btn-box"><a href="https://www.ieee.org/about/today/at-a-glance.html" class="theme-btn btn-style-one">Read more</a></div>
+                                            <div class="btn-box"><a href="about.html" class="theme-btn btn-style-one">Read more</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -1258,7 +1204,7 @@ ul.speakers-type-list .speakers-active:hover li{
                                         <h4>About IEEE Computer Society</h4>
                                         <div class="text">
                                             <p>The IEEE Computer Society is the premier source for information, inspiration, and collaboration in computer science and engineering. Connecting members worldwide, the Computer Society empowers the people who advance technology by delivering tools for individuals at all stages of their professional careers.</p>
-                                            <div class="btn-box"><a href="https://www.computer.org/about" class="theme-btn btn-style-one">Read more</a></div>
+                                            <div class="btn-box"><a href="about.html" class="theme-btn btn-style-one">Read more</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -1282,7 +1228,7 @@ ul.speakers-type-list .speakers-active:hover li{
 
     <!-- Event Highlight -->
     <section class="events-highlight style-three" id="sch">
-        <span class="float-text">Will be updated shortly!</span>
+        <span class="float-text">Event Tracks</span>
         <div class="anim-icons">
             <span class="icon icon-circle-11"></span>
             <span class="icon icon-circle-2"></span>
@@ -1291,24 +1237,24 @@ ul.speakers-type-list .speakers-active:hover li{
         </div>
         <div class="auto-container">
             <div class="sec-title">
-                <h2>Event Highlights</h2>
+                <h2>Event Tracks</h2>
             </div>
 
-            <div class="events-tab tabs-box">
+            <!--<div class="events-tab tabs-box">
                 <ul class="tab-buttons clearfix">
                     <li class="tab-btn active-btn" data-tab="#tab-1">1</li>
                     <li class="tab-btn" data-tab="#tab-2">2</li>
                     <li class="tab-btn" data-tab="#tab-3">3</li>
-                </ul>
+                </ul>-->
 
-                <!--Tabs Content-->  
-                <div class="tabs-content">
+                <!--Tabs Content-->
+               <!-- <div class="tabs-content">-->
                     <!--Tab / Active Tab-->
-                    <div class="tab active-tab" id="tab-1">
+                   <!-- <div class="tab active-tab" id="tab-1">
                         <div class="content">
-                            <div class="row">
+                            <div class="row">-->
                                 <!-- Shedule Column -->
-                                <div class="shedule-column col-lg-5 col-md-12 col-sm-12">
+                               <!-- <div class="shedule-column col-lg-5 col-md-12 col-sm-12">
                                     <div class="inner-column">
                                         <div class="shedule-box">
                                             <h3 class="day">DAY 1</h3>
@@ -1317,7 +1263,7 @@ ul.speakers-type-list .speakers-active:hover li{
                                             <div class="link-box"><a href="#"><span class="fa fa-angle-right"></span> More Details</a></div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
 
                                 <!-- Author Column -->
                                 <!--<div class="author-column col-lg-7 col-sm-12 col-sm-12">
@@ -1413,15 +1359,15 @@ ul.speakers-type-list .speakers-active:hover li{
                                         </div>
                                     </div>
                                 </div>-->
-                            </div>
+                            <!--</div>
                         </div>
-                    </div>
+                    </div>-->
 
                     <!--Tab-->
-                    <div class="tab" id="tab-2">
+                    <!--<div class="tab" id="tab-2">
                         <div class="content">
                             <div class="row">
-                                <!-- Shedule Column -->
+                                
                                 <div class="shedule-column col-lg-5 col-md-12 col-sm-12">
                                     <div class="inner-column">
                                         <div class="shedule-box">
@@ -1433,10 +1379,10 @@ ul.speakers-type-list .speakers-active:hover li{
                                     </div>
                                 </div>
 
-                                <!-- Author Column -->
+                                
                                 <div class="author-column col-lg-7 col-sm-12 col-sm-12">
                                     <div class="inner-column">
-                                        <div class="row">
+                                        <div class="row">-->
                                             <!-- Author block -->
                                             <!--<div class="author-block col-lg-6 col-md-6 col-sm-12">
                                                 <div class="inner-box">
@@ -1496,18 +1442,18 @@ ul.speakers-type-list .speakers-active:hover li{
                                                     <div class="text">Ut quo decore libris erroribus, vel ne omnium invidunt, ut eos dicat aeque int elle gat. Diam tota omnesqu Sed</div>
                                                 </div>
                                             </div>-->
-                                        </div>
+                                        <!--</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
 
                     <!--Tab-->
-                    <div class="tab" id="tab-3">
+                   <!-- <div class="tab" id="tab-3">
                         <div class="content">
                             <div class="row">
-                                <!-- Shedule Column -->
+                               
                                 <div class="shedule-column col-lg-5 col-md-12 col-sm-12">
                                     <div class="inner-column">
                                         <div class="shedule-box">
@@ -1519,10 +1465,10 @@ ul.speakers-type-list .speakers-active:hover li{
                                     </div>
                                 </div>
 
-                                <!-- Author Column -->
+                              
                                 <div class="author-column col-lg-7 col-sm-12 col-sm-12">
                                     <div class="inner-column">
-                                        <div class="row">
+                                        <div class="row">-->
                                             <!-- Author block -->
                                             <!--<div class="author-block col-lg-6 col-md-6 col-sm-12">
                                                 <div class="inner-box">
@@ -1582,14 +1528,14 @@ ul.speakers-type-list .speakers-active:hover li{
                                                     <div class="text">Ut quo decore libris erroribus, vel ne omnium invidunt, ut eos dicat aeque int elle gat. Diam tota omnesqu Sed</div>
                                                 </div>
                                             </div>-->
-                                        </div>
+                                       <!-- </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </section>
     <!--End Event Highlight -->
@@ -1923,7 +1869,7 @@ ul.speakers-type-list .speakers-active:hover li{
                 <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="price early">INR 2299</div>
-                         <div class="price original">2799</div>
+                         <div class="price original">2499</div>
                         <figure class="image"><img src="images/icons/day-pass.png" alt=""></figure>
                         <h4 class="title">IEEE Member</h4>
                         <ul class="features">
@@ -1941,8 +1887,8 @@ ul.speakers-type-list .speakers-active:hover li{
                 
                 <div class="pricing-block active col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
                      <div class="inner-box">
-                        <div class="price early">INR 1999</div>
-                        <div class="price original">2499</div>
+                        <div class="price early">INR 1799</div>
+                        <div class="price original">1999</div>
                         <figure class="image"><img src="images/icons/day-pass.png" alt=""></figure>
                         <h4 class="title">IEEE CS Member</h4>
                         <ul class="features">
@@ -1960,8 +1906,8 @@ ul.speakers-type-list .speakers-active:hover li{
                 
                 <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                      <div class="inner-box">
-                        <div class="price early">INR 2499</div>
-                         <div class="price original">2499</div>
+                        <div class="price early">INR 2799</div>
+                         <div class="price original">2999</div>
                         <figure class="image"><img src="images/icons/day-pass.png" alt=""></figure>
                         <h4 class="title">Others</h4>
                         <ul class="features">
@@ -2312,13 +2258,13 @@ ul.speakers-type-list .speakers-active:hover li{
                     <figure class="image"><a href="https://www.townscript.com/"><img src="images/clients/4.png" width="200" height="70" alt="Townscript"></a></figure>
                 </div>
                  <div class="client-logo col-lg-3 col-md-6 col-sm-12">
-                    <figure class="image"><a href="https://software.intel.com/en-us/"><img src="images/clients/intel.png" width="200" height="70" alt="Townscript"></a></figure>
+                    <figure class="image"><a href="https://software.intel.com/en-us/"><img src="images/clients/intel.png" width="200" height="70" style="" alt="Townscript"></a></figure>
                 </div>
 		<div class="client-logo col-lg-3 col-md-6 col-sm-12">
-                    <figure class="image"><a href="https://www.cisco.com/"><img src="images/clients/cisco.png" width="200" height="70" alt="Townscript"></a></figure>
+                    <figure class="image"><a href="https://www.cisco.com/"><img src="images/clients/cisco.png" width="200" height="70" style="" alt="Townscript"></a></figure>
                 </div>
 		<div class="client-logo col-lg-3 col-md-6 col-sm-12">
-                    <figure class="image"><a href="https://www.globalshapers.org/"><img src="images/clients/global.png" width="200" height="70" alt="Townscript"></a></figure>
+                    <figure class="image"><a href="https://www.globalshapers.org/"><img src="images/clients/global.png" width="200" height="70" style="" alt="Townscript"></a></figure>
                 </div>
                 <!--<div class="client-logo col-lg-3 col-md-6 col-sm-12">
                     <figure class="image"><a href="#"><img src="images/clients/3-7.png" alt=""></a></figure>
@@ -2681,24 +2627,22 @@ $('.button').on('click', function() {
 <script type="text/javascript">
 	var scrollTop = $(window).scrollTop();
 	var height = $(".main-header").height();
-	if (window.matchMedia("(min-width: 820px)").matches) {
-		$(".banner-section .content-box").css("display","none");
-		if(scrollTop>height-20){
-			$(".main-header").removeClass("atinit");
-			$(".banner-section").removeClass("initialbanner");
+
+		$(".banner-section .content-box").css("display","");
+		if(scrollTop>height-8){
+			$(".banner-section .content-box").addClass("scrolled-top");
+			//$(".main-header").removeClass("atinit");
+			//$(".banner-section").removeClass("initialbanner");
 			$(".navbar-collapse.collapse.scroll-nav").css("margin-top","-20px");
 			
 
 		}
 		else{
-			$(".main-header").addClass("atinit");
-			$(".banner-section").addClass("initialbanner");
+			$(".banner-section .content-box").removeClass("scrolled-top");
+			//$(".main-header").addClass("atinit");
+			//$(".banner-section").addClass("initialbanner");
 		}
-	}
-	else{
-
-		
-	}
+	
 
 
 
@@ -2706,23 +2650,20 @@ $('.button').on('click', function() {
 	
 	$(window).scroll(function(){
 		var scrollTop = $(window).scrollTop();
-		if (window.matchMedia("(min-width: 820px)").matches) {
-			$(".banner-section .content-box").css("display","none");
-		if(scrollTop>height-20){
-			$(".main-header").removeClass("atinit");
-			$(".banner-section").removeClass("initialbanner");
+	
+			$(".banner-section .content-box").css("display","");
+		if(scrollTop>height-8){
+			$(".banner-section .content-box").addClass("scrolled-top");
+			//$(".banner-section").removeClass("initialbanner");
 			$(".navbar-collapse.collapse.scroll-nav").css("margin-top","-20px");
 
 		}
 		else{
-			$(".main-header").addClass("atinit");
-			$(".banner-section").addClass("initialbanner");
+			$(".banner-section .content-box").removeClass("scrolled-top");
+			//$(".main-header").addClass("atinit");
+			//$(".banner-section").addClass("initialbanner");
 		}
-	}
-	else{
-		
-
-		}	
+	
 
 
 });
