@@ -27,7 +27,78 @@ body{
 
 
 
+.pricing-section.style-four .pricing-block .original{
+	text-decoration: line-through;
 
+}
+.pricing-section.style-four .pricing-block::before{
+	content: "Early Bird";
+	font-size: 14px;
+	height: 90px;
+	width: 60px;
+	display: block;
+	position: absolute;
+	right: 19px;
+	top: 0;
+	   border: 5px solid #f20487;
+    background-color: #f20487;
+    padding-top: 27px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    z-index: 22;
+    
+    border-bottom-left-radius: 0.633rem;
+    border-bottom-right-radius: 0.633rem;
+    border-top-right-radius: 0.233rem;
+
+}
+
+
+
+
+/*/////////////////////initial header////////////////////*/
+.main-header.atinit .header-upper .logo-box .logo img{
+ width: 40vw!important;
+ margin-left: 50vw;
+ background-color: transparent !important;
+ transform: translateX(-52%);
+}
+.main-header.atinit .header-upper .nav-outer .main-menu{
+	display: none!important;
+}
+.banner-section.initialbanner .content-box{
+	display: none!important;
+}
+.init-dialogue{
+	display: none;
+}
+.atinit{
+	 background-color: transparent !important;
+}
+.main-header.atinit .init-dialogue{
+	display: block;
+	color: #f2048a!important;
+    font-size: 47px !important;
+}
+.main-header.atinit .init-dialogue.Lower{
+	font-size: 19px!important;
+	    color: #f20487 !important;
+    font-weight: bold;
+    letter-spacing: 0.14em;
+    word-spacing: 0.7em;
+}
+.main-header.atinit .header-upper .outer-container{
+	margin-top: 30%;
+	transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 1180px){
+.main-header.atinit .header-upper .outer-container{
+	margin-top: 67%;
+	transform: translateY(-50%);
+}	
+}
 
 
 
@@ -51,8 +122,8 @@ body{
 .topic-section{
  width: 100vw;
  margin: 0 auto;
- background-color: #41209f;
- color: #fff;
+ background-color: transparent;
+ 
  height: unset; 
 
 }
@@ -60,7 +131,7 @@ body{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	font-family: sans-serif;
-	font-size: 34px;
+	
 	padding-top: 50px ;
 	padding-bottom: 50px;
 	overflow: hidden;
@@ -92,7 +163,7 @@ body{
 	padding-top: 13px;
 }
 .slides .button{
-	top: 100px;
+	top: 180px;
 }
 .slides{
 	overflow: hidden;
@@ -100,8 +171,7 @@ body{
 .slides .itemslide{
    
 	width: 35vw;
-	display: grid;
-	grid-template-rows: 1fr 1fr;
+	
 	grid-gap: 20px;
 	margin-bottom: 10px;
 	position: absolute;
@@ -109,6 +179,10 @@ body{
 	
 	transition: all 0.2s ease-in-out;
 	display: none;
+}
+.slides .itemslide img{
+	max-width: 70%;
+	margin: 0 auto;
 }
 .slides .itemslide.theactive{
 	animation: opacanim 0.3s 1;
@@ -243,6 +317,9 @@ body{
 }
 
 .banner-section{
+	width: 100vw;
+	background:linear-gradient(to bottom , rgba(18, 17, 74,0.4) , rgba(	18, 17, 74,0.9)),url(images/gallery/background.svg) ,linear-gradient(to left , #12114a , #12114a); background-size: cover;
+	background-attachment: fixed;
 	height: 100vh !important;
 	overflow: hidden;
 }
@@ -344,8 +421,49 @@ ul.speakers-type-list .speakers-active:hover li{
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+.countdown-inner-container span{
+	z-index: 1;
+}
+.countdown-inner-container::before{
+	content: "";
+	height: 120px;
+	width: 120px;
+	display: block;
+	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+	background-color: #f20487;
+	position: absolute;
+	margin-left: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .location-section{
-	
+	padding: 0!important;
 }
 .location-section .slide-item{
 
@@ -493,12 +611,14 @@ ul.speakers-type-list .speakers-active:hover li{
  .banner-section .content-box{
     	transform: translateY(-50%);
     margin-top: 37% !important;
+    background-color: transparent !important;
     }
 
 @media only screen and (max-width: 1040px){
     .banner-section .content-box{
     	transform: translateY(-50%);
         margin-top: 48% !important;
+        background-color: transparent !important;
     }
     .banner-section .content-box .btn-box{
  	    margin-left: 0px;
@@ -507,6 +627,7 @@ ul.speakers-type-list .speakers-active:hover li{
 
     .banner-section .content-box {
         width: 100%;
+        background-color: transparent !important;
         text-align: center;
     }
 
@@ -527,8 +648,8 @@ ul.speakers-type-list .speakers-active:hover li{
 
 @media only screen and (max-width: 767px){
     .banner-section .content-box{
-    	
-        margin-top: 63% !important;
+    	margin-top: 103% !important;
+       transform: translateY(-80%);
     }
 }
 
@@ -579,9 +700,12 @@ ul.speakers-type-list .speakers-active:hover li{
         <div class="header-upper">
         	<div class="outer-container">
             	<div class="clearfix">
+            		<span class="init-dialogue Upper">Get ready for<br></span>
                 	<div class="pull-left logo-box">
                     	<div class="logo"><a href="#"><img src="images/logo-techx.png" height="40" width="130" alt="" title=""></a></div>
                     </div>
+                    <br>
+                    <span class="init-dialogue Lower" style="text-decoration: unset; padding-left: 35px;">Technology. Leadership. Innovation.<br></span>
                    	
                    	<div class="nav-outer clearfix">
                     
@@ -604,7 +728,7 @@ ul.speakers-type-list .speakers-active:hover li{
                                             <li><a href="index-5.html">Home page 04</a></li>
                                         </ul>-->
                                     </li>
-                                    <li class="dropdown"><a href="#about">About</a>
+                                    <li class="dropdown"><a href="about.html">About</a>
                                         <!--<ul>
                                             <li><a href="about.html">About</a></li>
                                             <li><a href="pricing.html">Pricing</a></li>
@@ -765,19 +889,22 @@ ul.speakers-type-list .speakers-active:hover li{
 
     <!-- Bnner Section -->
     <section class="banner-section">
-        <div class="banner-carousel owl-carousel owl-theme">
-        	<div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.3)), url(images/main-slider/banner1.jpg); background-size: cover;">
+
+
+    	<div class="content-box" style="">
+    		<span class="init-content-dialogue Upper" style="font-size: 29px; color: #f2048a; ">Get ready for<br></span>
+                	<div class="logo-box">
+                    	<div class="logo"><a href="#"><img style="width: 90vw;" src="images/logo-techx.png" height="40" width="130" alt="" title=""></a></div>
+                    </div>
+                    <br>
+                    <span class="init-content-dialogue Lower" style="text-decoration: unset;font-size: 29px; color: #f2048a;">Technology. Leadership. Innovation.<br></span>
+    	</div>
+        <!--<div class="banner-carousel owl-carousel owl-theme">
+        	<div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.4)),url(images/gallery/background.svg) ,linear-gradient(to left , #12114a , #12114a); background-size: cover;">
                 <div class="auto-container clearfix">
                 	
                     <div class="content-box">
-                    	<div class="jumbotron Countdown-timer" id="Countdown-timer">
-    						<span style="white-space: nowrap;display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;">
-    							<span class="countdown-inner-container" style=""><span class="number-part" id="days"></span><span>days</span></span>
-    							<span class="countdown-inner-container"><span class="number-part" id="hours"></span><span>hours</span></span>
-    							<span class="countdown-inner-container"><span class="number-part" id="minutes"></span><span>minutes</span></span>
-    							<span class="countdown-inner-container"><span class="number-part" id="seconds"></span><span>seconds</span></span>
-    						</span>
-    					</div>
+                    	
                         
                         <div class="text">Kolkata Section Computer Society Students and Young Professional Congress</div>
                         <div class="btn-box clearfixr">
@@ -790,6 +917,7 @@ ul.speakers-type-list .speakers-active:hover li{
             <div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.3)), url(images/main-slider/banner2.jpg); background-size: cover;">
                 <div class="auto-container">
                     <div class="content-box">
+                    
                         
                         <div class="text">Kolkata Section Computer Society Students and Young Professional Congress</div>
                         <div class="btn-box clearfixr">
@@ -802,6 +930,7 @@ ul.speakers-type-list .speakers-active:hover li{
             <div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.3)), url(images/main-slider/8.jpg); background-size: cover;">
                 <div class="auto-container clearfix">
                     <div class="content-box">
+                    	
                         
                         <div class="text">Kolkata Section Computer Society Students and Young Professional Congress</div>
                         <div class="btn-box clearfixr">
@@ -813,9 +942,10 @@ ul.speakers-type-list .speakers-active:hover li{
 
             <div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.3)), url(images/main-slider/banner4.jpg); background-size: cover;">
                 <div class="auto-container clearfix">
+
                 	
                     <div class="content-box">
-                        
+                    	
                         <div class="text">Kolkata Section Computer Society Students and Young Professional Congress</div>
                         <div class="btn-box clearfixr">
                             <a href="#" class="theme-btn btn-style-two">Stay Tuned!</a>
@@ -825,7 +955,7 @@ ul.speakers-type-list .speakers-active:hover li{
             </div>
             
 
-        </div>
+        </div>-->
     </section>
     <!-- End Bnner Section -->
 
@@ -882,7 +1012,7 @@ ul.speakers-type-list .speakers-active:hover li{
                 <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="icon"><img src="images/resource/feature-2-1.png" alt=""></div>
-                        <h4><a href="#">Great Speakers</a></h4>
+                        <h4><a href="#">Industry Speakers</a></h4>
                         <!--<div class="text">Ex vim lorem homero. Te sit mutat graece deserunt ea has. Sumo</div>-->
                     </div>
                 </div>
@@ -891,8 +1021,8 @@ ul.speakers-type-list .speakers-active:hover li{
                 <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
                     <div class="inner-box">
                         <div class="icon"><img src="images/resource/feature-2-2.png" alt=""></div>
-                        <h4><a href="#">Networking</a></h4>
-                        <!--<div class="text">Ex vim lorem homero. Te sit mutat graece deserunt ea has. Sumo</div>-->
+                        <h4><a href="#">250+ Delegates</a></h4>
+                        <div class="text">Meet people from the leading universities in the country.</div>
                     </div>
                 </div>
 
@@ -900,8 +1030,8 @@ ul.speakers-type-list .speakers-active:hover li{
                 <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="icon"><img src="images/resource/feature-2-3.png" alt=""></div>
-                        <h4><a href="#">Hands-on experiences</a></h4>
-                        <!--<div class="text">Ex vim lorem homero. Te sit mutat graece deserunt ea has. Sumo</div>-->
+                        <h4><a href="#">Hands-On Experiences</a></h4>
+                        <div class="text">Exciting workshops where you experience the bleeding edge of tech with your own hands.</div>
                     </div>
                 </div>
 
@@ -910,7 +1040,58 @@ ul.speakers-type-list .speakers-active:hover li{
                     <div class="inner-box">
                         <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
                         <h4><a href="#">Innovative Challenges</a></h4>
-                        <!--<div class="text">Ex vim lorem homero. Te sit mutat graece deserunt ea has. Sumo</div>-->
+                        <div class="text">Specially curated contests in every track to put your skills to the test.</div>
+                    </div>
+                </div>
+                <!-- Feature Block Two -->
+                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                    <div class="inner-box">
+                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <h4><a href="#">Networking Sessions</a></h4>
+                        <div class="text">Exclusive sessions for network building. 
+								<br>Because. Connections. Matter.</div>
+                    </div>
+                </div>
+                <!-- Feature Block Two -->
+                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                    <div class="inner-box">
+                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <h4><a href="#">IEEE Student Branch Meet</a></h4>
+                        <div class="text">Get exclusive access to future events before anyone else!</div>
+                    </div>
+                </div>
+                <!-- Feature Block Two -->
+                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                    <div class="inner-box">
+                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <h4><a href="#">Campus to Corporate Leap</a></h4>
+                        <div class="text">Develop the skills needed to face the corporate at our panel discussion.</div>
+                    </div>
+                </div>
+                <!-- Feature Block Two -->
+                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                    <div class="inner-box">
+                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <h4><a href="#">Exotic Location</a></h4>
+                        <div class="text">Poolside events and beachside ice-breaking sessions. 
+							<br>Because Why Not?
+						</div>
+                    </div>
+                </div>
+                <!-- Feature Block Two -->
+                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                    <div class="inner-box">
+                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <h4><a href="#">Socials</a></h4>
+                        <div class="text">Music and cultural gigs are always in high demand.</div>
+                    </div>
+                </div>
+                <!-- Feature Block Two -->
+                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                    <div class="inner-box">
+                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <h4><a href="#">Gala Dinner</a></h4>
+                        <div class="text">Indulge in the finest culinary cuisines at a luxury resort. </div>
                     </div>
                 </div>
             </div>
@@ -940,7 +1121,7 @@ ul.speakers-type-list .speakers-active:hover li{
 
 
    <!-- Events Section -->
-  <section class="topic-section">
+ <!-- <section class="topic-section">
 	<div class="topic-container">
 		<div class="list">
 			 <div class="inner-column" style="background-image: url(images/resource/backevents2.png); background-size: contain; background-position: center;">
@@ -953,13 +1134,13 @@ ul.speakers-type-list .speakers-active:hover li{
                                 <div class="info-box date">
                                     <span class="icon flaticon-small-calendar"></span>
                                     <div class="text">28th feb to 1st march 2020</div>
-                                </div>
+                                </div>-->
 
                                 <!--<div class="info-box time">
                                     <span class="icon flaticon-clock-1"></span>
                                     <div class="text">To be announced</div>
                                 </div>-->
-                            </div>
+                         <!--   </div>
                         </div>
 		</div>
 		<div class="slides">
@@ -987,7 +1168,7 @@ ul.speakers-type-list .speakers-active:hover li{
 			</div>
 		</div>
 	</div>
-</section>
+</section>-->
 <!--End Events Section -->
 
 
@@ -1045,7 +1226,7 @@ ul.speakers-type-list .speakers-active:hover li{
                                         <span class="float-text">About IEEE</span>
                                         <h4>About IEEE</h4>
                                         <div class="text">
-                                            <p>IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity with More than 422,000 members in more than 160 countries. IEEE and its members inspire a global community through its highly cited publications, conferences, technology standards, and professional and educational activities.IEEE communities are active participants in research and authorship, conferences, and important conversations about today's most relevant technical topics locally and globally.</p>
+                                            <p>IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity . IEEE and its members inspire a global community through its highly cited publications, conferences, technology standards, and professional and educational activities.</p>
 
                                             <div class="btn-box"><a href="https://www.ieee.org/about/today/at-a-glance.html" class="theme-btn btn-style-one">Read more</a></div>
                                         </div>
@@ -1072,7 +1253,7 @@ ul.speakers-type-list .speakers-active:hover li{
                                         <span class="float-text">Computer Society</span>
                                         <h4>About IEEE Computer Society</h4>
                                         <div class="text">
-                                            <p>The IEEE Computer Society is the premier source for information, inspiration, and collaboration in computer science and engineering. Connecting members worldwide, the Computer Society empowers the people who advance technology by delivering tools for individuals at all stages of their professional careers. Our trusted resources include international conferences, peer-reviewed publications, a robust digital library, globally recognized standards, and continuous learning opportunities.</p>
+                                            <p>The IEEE Computer Society is the premier source for information, inspiration, and collaboration in computer science and engineering. Connecting members worldwide, the Computer Society empowers the people who advance technology by delivering tools for individuals at all stages of their professional careers.</p>
                                             <div class="btn-box"><a href="https://www.computer.org/about" class="theme-btn btn-style-one">Read more</a></div>
                                         </div>
                                     </div>
@@ -1082,53 +1263,10 @@ ul.speakers-type-list .speakers-active:hover li{
                         </div>
 
                         
-                        <div class="content-details" id="">
-                            <div class="row">
-                                <div class="content-column col-lg-8 col-md-12 col-sm-12">
-                                    <div class="inner-column" style="max-width: unset;padding-right: 50px;">
-                                        <span class="float-text">Kolkata Section</span>
-                                        <h4>About IEEE Kolkata Section</h4>
-                                        <div class="text">
-                                            <p>IEEE Kolkata Section comes under Asia-Pacific Region, the Region 10 of IEEE.
-
-											   The Eastern Regional Sub-Section of IEEE in India, was formed way back in 1971. It was given the name of Calcutta Sub-Section, under the Delhi Section of IEEE, India after the formation of the India Council. The Calcutta Sub-Section was later  raised to the status of a full section on September 28, 1978.
-
-											   Over the years, the activities of IEEE Kolkata Section have increased manifold and spread through many cities and state capitals under the Section. IEEE Kolkata Section currently has 11 chapters, 2 affinity groups and more than 15 student branches . The mission of IEEE Kolkata Section is to spread IEEE activities to all remote corners through conferences and seminars, and to develop technological solutions for humanitarian challenges. The Section maintains a healthy student to member ratio and works closely and coherently with its chapters and affinity groups not only in technical, education and membership development activities but also in outreach activities.
-											</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="image-column col-lg-4 col-md-12 col-sm-12">
-                                    <div class="inner-column">
-                                        <figure class="image"><img class="kol-sec-details" src="images/clients/IEEE_kol_logo.png" alt="" style="margin-top: 50px;"></figure>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
 
                         
-                        <div class="content-details" id="">
-                            <div class="row">
-                            	<div class="image-column col-lg-4 col-md-12 col-sm-12">
-                                    <div class="inner-column" style="display: flex;flex-direction: column;">
-                                        <figure class="image"><img src="images/clients/sb1.png" alt="" height="140px" style="height: 150px; width: auto; margin-bottom: 20px;"></figure>
-                                        <figure class="image"><img src="images/clients/sb_logo.png" alt="" height="140px" style="height: 150px; width: auto;"></figure>
-                                    </div>
-                                </div>
-                                <div class="content-column col-lg-8 col-md-12 col-sm-12">
-                                    <div class="inner-column" style="max-width: unset;padding-right: 50px;">
-                                        <span class="float-text">NITD | JU</span>
-                                        <h4>Host Branches</h4>
-                                        <div class="text">
-                                            <p>Knowledge is power. When shared, it's multiplied !"
-												With this vision to augment the atmosphere which encourages advancement in research and technology in our community,  IEEE CS SYP is organizing TechX- an endeavor to inculcate the habit of thinking in every individual who comes along, under the banner of KOLKATA SECTION with the co-hosts as IEEE SB NIT Durgapur and IEEE SB Jadavpur University. Both the branches have organized numerous events, hands-on workshops and keynote speeches on an assortment of topics and fields of technology. The impact we created is established by the volume of the crowd who attend our events from all across the society and the collaborations with tech giants like Google, Facebook, Unity, Intel, and Capgemini.  
-												With TechX, we aim to carry out our vision of spreading awareness at a grander scale!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
+                     
                     </div>
                 </div>
             </div>
@@ -1488,13 +1626,13 @@ ul.speakers-type-list .speakers-active:hover li{
                 <h2>Event Speakers</h2>
             </div>    
             <!-- Speakers Division-->
-        <ul class="speakers-type-list">
-            <!--<li class="ML">Machine Learning</li>-->
+        <!--<ul class="speakers-type-list">
+            <li class="ML">Machine Learning</li>
             <li class="Networking">Networking</li>
             <li class="all speakers-active">All</li>
-            <!--<li class="IOT">IOT</li>-->
+            <li class="IOT">IOT</li>
             <li class="Leadership">Leadership Track</li>
-        </ul>
+        </ul>-->
         <!-- End speakers division-->        
 
             <div class="row">
@@ -1770,17 +1908,18 @@ ul.speakers-type-list .speakers-active:hover li{
             <span class="icon icon-circle-3 wow zoomIn" data-wow-delay="1200ms"></span>
             <span class="icon icon-circle-4 wow zoomIn" data-wow-delay="1800ms"></span>
         </div>
-        <span class="float-text">Early Bird Plan (Till 15th January)</span>
+        <span class="float-text">Tickets</span>
         <div class="auto-container">
             <div class="sec-title">
-                <h2>Early Bird Plan (Till 15th January)</h2>
+                <h2>Tickets</h2>
             </div>
 
             <div class="row">
                 
                 <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
-                        <div class="price">INR 2299</div>
+                        <div class="price early">INR 2299</div>
+                         <div class="price original">2799</div>
                         <figure class="image"><img src="images/icons/day-pass.png" alt=""></figure>
                         <h4 class="title">IEEE Member</h4>
                         <ul class="features">
@@ -1798,7 +1937,8 @@ ul.speakers-type-list .speakers-active:hover li{
                 
                 <div class="pricing-block active col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
                      <div class="inner-box">
-                        <div class="price">INR 1999</div>
+                        <div class="price early">INR 1999</div>
+                        <div class="price original">2499</div>
                         <figure class="image"><img src="images/icons/day-pass.png" alt=""></figure>
                         <h4 class="title">IEEE CS Member</h4>
                         <ul class="features">
@@ -1816,7 +1956,8 @@ ul.speakers-type-list .speakers-active:hover li{
                 
                 <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                      <div class="inner-box">
-                        <div class="price">INR 2499</div>
+                        <div class="price early">INR 2499</div>
+                         <div class="price original">2499</div>
                         <figure class="image"><img src="images/icons/day-pass.png" alt=""></figure>
                         <h4 class="title">Others</h4>
                         <ul class="features">
@@ -1916,27 +2057,72 @@ ul.speakers-type-list .speakers-active:hover li{
 
 
 
+<section class="topic-section auto-container">
+	<div class="topic-container">
+		<div class="list">
+			<span class="float-text">Mandarmani</span>
+    	<div class="sec-title">
+    	  <h2>Destination</h2>
+          <h4>Suncity Resort, Mandarmani</h4>
+      </div>
 
+      
+
+
+          <span class="text" style="padding-bottom: 60px; padding-right: 50px;">"High achievement always take place in the framework of high expectation."</br>
+
+						  Any event can be great by the ambience of the place where it happens. A place sets the environment as well as the mood of the participants. Without further ado we bring you  the venue for the <font style="font-weight: bold;">Tech-X Congress</font>. <font style="font-weight: bold;">‘Suncity Resort Mandarmani’</font>. Mandarmani is a seaside resort village (largest) in the state of West Bengal, India, and lies in East Midnapore district, at the northern end of the Bay of Bengal. With the breezes that come with the sea currents, the beautiful beaches and the everlasting sea will give you the journey full of inspiration, learning and fun. As it said that the best lessons learned are those that are taught outside the four walls of classroom so here we bring you a whole new beautiful classroom where you can enjoy learning, experience a whole new adventure and know many people from all around the country. So join us in this learning vacation revolving around amazing sunset view, steamy bonfire, placid strolling along the beach, provoking keynote speeches, captivating workshops and much more!</span>
+			
+		</div>
+		<div class="slides">
+			<ul>
+				<li class="itemslide theactive">
+					<img src="images/gallery/pic9.jpg" alt="Mandarmani">
+				</li>
+				<li class="itemslide theactive">
+					<img src="images/gallery/pic6.jpg" alt="Mandarmani">
+				</li>
+				<li class="itemslide">
+					<img src="images/gallery/pic12.jpg" alt="Mandarmani">
+				</li>
+				<li class="itemslide">
+					<img src="images/gallery/pic10.jpg" alt="Mandarmani">
+				</li>
+				<li class="itemslide">
+					 <img src="images/gallery/pic11.jpg" alt="Mandarmani">
+				</li>
+			</ul>
+			<div class="button-container" style="position: relative;">
+			<div class="button" id="slide-next" style="position: absolute;left: 30px;height: 30px; width: 30px; font-size: 13px;"><i class="fa fa-arrow-left"></i></div>
+			<div class="button" id="slide-previous" style="position: absolute; right: 30px;height: 30px; width: 30px; font-size: 13px;"><i class="fa fa-arrow-right"></i></div>
+			</div>
+		</div>
+	</div>
+</section>
 
 
 
 
 <!-- Bnner Section -->
-    <section class="location-section" id="ven">
-    	<div class="auto-container">
+<!--<section class="location-section" id="ven">
+    <div class="auto-container">
     	<span class="float-text">Mandarmani</span>
     	<div class="sec-title">
     	  <h2>Destination</h2>
           <h4>Suncity Resort, Mandarmani</h4>
       </div>
-      <span class="text" style="padding-bottom: 60px;">"High achievement always take place in the framework of high expectation."</br>
+
+      
+
+
+          <span class="text" style="padding-bottom: 60px;">"High achievement always take place in the framework of high expectation."</br>
 
 						  Any event can be great by the ambience of the place where it happens. A place sets the environment as well as the mood of the participants. Without further ado we bring you  the venue for the <font style="font-weight: bold;">Tech-X Congress</font>. <font style="font-weight: bold;">‘Suncity Resort Mandarmani’</font>. Mandarmani is a seaside resort village (largest) in the state of West Bengal, India, and lies in East Midnapore district, at the northern end of the Bay of Bengal. With the breezes that come with the sea currents, the beautiful beaches and the everlasting sea will give you the journey full of inspiration, learning and fun. As it said that the best lessons learned are those that are taught outside the four walls of classroom so here we bring you a whole new beautiful classroom where you can enjoy learning, experience a whole new adventure and know many people from all around the country. So join us in this learning vacation revolving around amazing sunset view, steamy bonfire, placid strolling along the beach, provoking keynote speeches, captivating workshops and much more!</span>
-        <div class="banner-carousel owl-carousel owl-theme" style="margin-top: 50px;margin-bottom: 8px;">
-        	<div class="slide-item" style=" background-size: cover;">
+            <div class="banner-carousel owl-carousel owl-theme" style="margin-top: 50px;margin-bottom: 8px;">
+        	  <div class="slide-item" style=" background-size: cover;">
         		<img src="images/gallery/pic9.jpg" alt="Mandarmani">
                 
-            </div>
+             </div>
        
             <div class="slide-item" style=" background-size: cover;">
             	<img src="images/gallery/pic6.jpg" alt="Mandarmani">
@@ -1957,8 +2143,14 @@ ul.speakers-type-list .speakers-active:hover li{
                 
             </div>
            
-        </div>
-     </div>
+          </div>
+      
+    
+    </div>
+
+
+    </section>-->
+    <!-- End Bnner Section -->
 
 <section style="width: 100vw;">
    <div class="map-full" style="background-color: #12114a;">
@@ -1968,8 +2160,6 @@ ul.speakers-type-list .speakers-active:hover li{
   </div>
 
  </section>
-    </section>
-    <!-- End Bnner Section -->
 
 
 
@@ -1979,9 +2169,18 @@ ul.speakers-type-list .speakers-active:hover li{
 
 
 
-
-
-
+<section class="countdown" style="width: 100% ;background:linear-gradient(to left, rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url('images/gallery/pic9.jpg');background-size: cover; background-attachment: fixed; ">
+	<div class="auto-container">
+	                    <div class="jumbotron Countdown-timer" id="Countdown-timer">
+    						<span style="white-space: nowrap;display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;">
+    							<span class="countdown-inner-container" style=""><span class="number-part" id="days"></span><span>days</span></span>
+    							<span class="countdown-inner-container"><span class="number-part" id="hours"></span><span>hours</span></span>
+    							<span class="countdown-inner-container"><span class="number-part" id="minutes"></span><span>minutes</span></span>
+    							<span class="countdown-inner-container"><span class="number-part" id="seconds"></span><span>seconds</span></span>
+    						</span>
+    					</div>
+    </div>
+</section>
 
 
 
@@ -2108,7 +2307,7 @@ ul.speakers-type-list .speakers-active:hover li{
                 <div class="client-logo col-lg-3 col-md-6 col-sm-12">
                     <figure class="image"><a href="https://www.townscript.com/"><img src="images/clients/4.png" width="200" height="70" alt="Townscript"></a></figure>
                 </div>
-		    <div class="client-logo col-lg-3 col-md-6 col-sm-12">
+                 <div class="client-logo col-lg-3 col-md-6 col-sm-12">
                     <figure class="image"><a href="https://software.intel.com/en-us/"><img src="images/clients/intel.png" width="200" height="70" alt="Townscript"></a></figure>
                 </div>
 		<div class="client-logo col-lg-3 col-md-6 col-sm-12">
@@ -2210,7 +2409,7 @@ ul.speakers-type-list .speakers-active:hover li{
         <div class="auto-container">
             <div class="sec-title text-center light">
                 <!--<span class="title">TechX</span>-->
-                <h2>TechX</h2>
+                <h2 style="font-weight: lighter;">Tech<font style="font-family: sans-serif; font-size: 40px; font-weight: bold;">X</font></h2>
                 <p style="color: #fff;">Kolkata Section Computer Society Students and Young Professional Congress</p>
             </div>
 
@@ -2293,7 +2492,7 @@ ul.speakers-type-list .speakers-active:hover li{
 <script type="text/javascript">
     jQuery(document).ready(function ($){
 
-        $(".speakers-type-list li").click(function(){
+        /*$(".speakers-type-list li").click(function(){
             $(".speakers-type-list li").removeClass('speakers-active');
             $(this).addClass("speakers-active");
             if($(this).hasClass("Networking")){
@@ -2323,7 +2522,7 @@ ul.speakers-type-list .speakers-active:hover li{
             else  if($(this).hasClass("all")){
                $(".auto-container .row .speaker-block-two").css("transform","scale(1)").css("display","block"); 
             }
-        })
+        })*/
     })
 </script>
 
@@ -2357,11 +2556,15 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-  // Output the result in an element with id="demo"
+  // first slide
   document.getElementById("days").innerHTML = days +"";
   document.getElementById("hours").innerHTML = hours+"";
   document.getElementById("minutes").innerHTML = minutes+"";
   document.getElementById("seconds").innerHTML =seconds+"";
+
+
+
+
     
   // If the count down is over, write some text 
   if (distance < 0) {
@@ -2387,10 +2590,13 @@ var x = setInterval(function() {
 	if(timenow<EarlyRegdate){
 		$(".Regular-Plan").css("display","none");
 		$(".Early-bird").css("display","block");
+		(".pricing-section.style-four .pricing-block .original").css("text-decoration","line-through");
 	}
 	else{
-		$(".Regular-Plan").css("display","block");
-		$(".Early-bird").css("display","none");
+		$(".Regular-Plan").css("display","none");
+		$(".Early-bird").css("display","block");
+		(".pricing-section.style-four .pricing-block .original").css("text-decoration","unset");
+		(".pricing-section.style-four .pricing-block .early").css("display","none");
 	}
 	
 </script>
@@ -2465,6 +2671,57 @@ $('.button').on('click', function() {
 
 
   });
+</script>
+
+
+<script type="text/javascript">
+	var scrollTop = $(window).scrollTop();
+	var height = $(".main-header").height();
+	if (window.matchMedia("(min-width: 820px)").matches) {
+		$(".banner-section .content-box").css("display","none");
+		if(scrollTop>height-20){
+			$(".main-header").removeClass("atinit");
+			$(".banner-section").removeClass("initialbanner");
+			$(".navbar-collapse.collapse.scroll-nav").css("margin-top","-20px");
+			
+
+		}
+		else{
+			$(".main-header").addClass("atinit");
+			$(".banner-section").addClass("initialbanner");
+		}
+	}
+	else{
+
+		
+	}
+
+
+
+
+	
+	$(window).scroll(function(){
+		var scrollTop = $(window).scrollTop();
+		if (window.matchMedia("(min-width: 820px)").matches) {
+			$(".banner-section .content-box").css("display","none");
+		if(scrollTop>height-20){
+			$(".main-header").removeClass("atinit");
+			$(".banner-section").removeClass("initialbanner");
+			$(".navbar-collapse.collapse.scroll-nav").css("margin-top","-20px");
+
+		}
+		else{
+			$(".main-header").addClass("atinit");
+			$(".banner-section").addClass("initialbanner");
+		}
+	}
+	else{
+		
+
+		}	
+
+
+});
 </script>
 </body>
 
