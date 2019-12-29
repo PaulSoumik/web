@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Mirrored from sitetemplate.demo.ithemeslab.com/fizcon/index-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Feb 2019 10:38:32 GMT -->
 <head>
 <meta charset="utf-8">
 <title>IEEE TechX Congress</title>
@@ -17,8 +16,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+
+
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <!--Personalised Styles-->
 <style type="text/css">
 body{
@@ -27,18 +32,86 @@ body{
 
 
 
+.location-details .reachlocation-info .img-box i{
+	background: linear-gradient(35deg,#f20a87, #4b1ece);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.7;
+}
+
+.location-details .reachlocation-info .img-box{
+	padding-bottom: 40px;
+	 
+
+}
+
+.location-details .reachlocation-info .sec-title{
+	font-size: 23px;
+	color: #11124a;
+	padding-bottom: 15px;
+	
+}
+@media only screen and (max-width: 800px){
+.location-details .reachlocation-info .img-box{
+	padding-top: 30px;
+	 
+
+}
+}
+
 
 
 
 
 /*Tracks*/
+.tracks-container{
+	display: flex;
+	flex-wrap: wrap;
+}
 .tracks-info.jumbotron{
-	padding: 1rem 1rem;
+	padding: 1.6rem 1rem;
 	margin-left: 10px;
+	flex: 40%;
+}
+.tracks-info.jumbotron.active-info{
+	background-color: #4b1ece;
+	color: #fff;
+}
+.active-info .float-text img{
+	opacity: 0.24!important;
+	filter: saturate(0) invert(100%) !important;
+}
+.tracks-info.jumbotron.active-info .sec-title{
+	color: #fff;
+	font-weight: bolder;
+}
+
+@media only screen and (max-width:990px ){
+	.event-topics-tabs .image-column .image img{
+		display: none;
+	}
+	.main-menu .navbar-header .navbar-toggler{
+		margin-top: -15px;
+	}
+	.tracks-info.jumbotron{
+		flex: 100%;
+	}
+	.feature-section-two.style-two .feature-block-two{
+		margin-bottom: 16px;
+	}
+	.feature-section-two.style-two .feature-block-two .inner-box{
+		
+		padding-top: 10px;
+	}
+
+
+	.events-highlight .float-text{
+		display: block!important;
+	}
 }
 .tracks-info.jumbotron .sec-title{
 	color: #11124a;
-	margin-bottom: 12px!important;
+	margin-bottom: 16px!important;
 
 }
 
@@ -46,14 +119,203 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
+.row .cntact-us{
+	text-align: center;
+}
+
+.social-links-data ul{
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+.social-links-data ul li{
+	padding-left: 5px;
+	font-size: 30px;
+}
+.cntact-us a{
+	color: #fff;
+}
+/**/
+.row .cntact-us .title{
+	color: #fff;
+	font-size: 1.2em;
+
+}
+
+.main-footer ul li{
+	padding-bottom: 4px;
+}
+.main-footer h6{
+	padding-bottom: 13px;
+}
+.main-footer a{
+	color: #fff!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*hover effect*/
+/*----- features -----*/
+.feature-section-two.style-two .feature-block-two:after{
+  right:15px;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.feature-section-two.style-two .feature-block-two .inner-box::after{
+  right:0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.feature-section-two.style-two .feature-block-two::before{
+  left: 15px;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.feature-section-two.style-two .feature-block-two .inner-box::before{
+  left: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.feature-section-two.style-two .feature-block-two::before, .feature-section-two.style-two .feature-block-two::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #11124a;
+
+}
+
+.feature-section-two.style-two .feature-block-two .inner-box::before, .feature-section-two.style-two .feature-block-two .inner-box::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #11124a;
+
+}
+
+
+
+
+.feature-section-two.style-two .feature-block-two:hover::before, .feature-section-two.style-two .feature-block-two:hover::after{
+  width: calc(100% - 30px);
+}
+.feature-section-two.style-two .feature-block-two:hover .inner-box::before, .feature-section-two.style-two .feature-block-two:hover .inner-box::after{
+  height: 100%;
+}
+
+
+
+
+.feature-section-two.style-two .feature-block-two .inner-box{
+	padding-bottom: 20px;
+    padding-right: 0;
+    height: 100%;
+    border:0.5px solid #dedede;
+}
+
+@media only screen and (max-width: 1100px){
+	.feature-section-two.style-two.col-lg-4{
+		flex: 0 0 49%;
+		max-width: 49%;
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.pricing-section.style-four .pricing-block .query-on-hover{
+	cursor: text;
+	display: none;
+	padding: 9px!important;
+}
+.pricing-section.style-four .pricing-block .queryis{
+	cursor: pointer;
+}
+.pricing-section.style-four .pricing-block.not-active:hover .queryis i{
+	color: #f2048a !important;
+}
+.pricing-section.style-four .pricing-block.not-active:hover .queryis span h3{
+	color: #f9348a!important;
+}
+.pricing-section.style-four .pricing-block .queryis i{
+	cursor: pointer;
+}
+.pricing-section.style-four .pricing-block .queryis:hover .query-on-hover{
+	display: block;
+
+}
 
 .pricing-section.style-four .pricing-block .original{
 	text-decoration: line-through;
 
 }
 .pricing-section.style-four .pricing-block::before{
-	content: "Early Bird";
-	font-size: 14px;
+	content: "Early Bird(till 7th JAN)";
+	font-size: 12px;
 	height: 90px;
 	width: 60px;
 	display: block;
@@ -62,7 +324,7 @@ body{
 	top: 0;
 	   border: 5px solid #f20487;
     background-color: #f20487;
-    padding-top: 27px;
+    padding-top: 5px;
     text-align: center;
     color: #fff;
     font-weight: 500;
@@ -332,7 +594,7 @@ body{
 
 .banner-section{
 	width: 100vw;
-	background:linear-gradient(to bottom , rgba(18, 17, 74,0.4) , rgba(	18, 17, 74,0.9)),url(images/gallery/background.svg) ,linear-gradient(to left , #12114a , #12114a); background-size: 120%;
+	background:linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.7)),url(images/gallery/background.svg) ,linear-gradient(to left , #12114a , #12114a); background-size: cover;
 	background-attachment: fixed;
 	height: 100vh !important;
 	overflow: hidden;
@@ -352,6 +614,38 @@ body{
 .banner-section .owl-carousel .owl-stage{
 	height: 100vh!important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*///////////speakers/////////*/
 ul.speakers-type-list{
         position: relative;
         float: right;
@@ -400,6 +694,27 @@ ul.speakers-type-list .speakers-active:hover li{
     	color: #fff;
 
     }
+
+.speakers-section-two .row .speaker-block-two{
+	margin-bottom: 68px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .Countdown-timer{
     	width: 100%;
     	background-color: transparent!important;
@@ -469,8 +784,15 @@ ul.speakers-type-list .speakers-active:hover li{
 
 
 
+.topics-section-two.style-two{
+	margin-bottom: 0px;
+	padding-bottom: 10px;
+	padding-top: 40px;
+}
 
+.event-topics-tabs .image-column .image{
 
+}
 
 
 
@@ -564,6 +886,38 @@ ul.speakers-type-list .speakers-active:hover li{
 	.kol-sec-details{
 		margin-bottom: 20px;
 	}
+
+
+	
+}
+@media only screen and (max-width: 800px){
+
+	.pricing-section.style-four .pricing-block .inner-box{
+		padding-top: 120px;
+	}
+	.mobile-inactive-info{
+		background-color: #e9ecef !important;
+		color: unset!important;
+	}
+	.mobile-active-info{
+		background-color: #4b1ece!important;
+		color: #fff!important;
+	}
+	.mobile-active-info .sec-title{
+		color: #fff!important;
+	}
+	.mobile-inactive-info .sec-title{
+		color: #11124a!important;
+	}
+	.mobile-active-info .float-text img{
+		opacity: 0.14!important;
+       filter: saturate(0) invert(100%) !important;
+	}
+	.mobile-inactive-info .float-text img{
+		opacity: 0.14!important;
+       filter: saturate(0) !important;
+	}
+
 }
 
 
@@ -651,12 +1005,12 @@ ul.speakers-type-list .speakers-active:hover li{
 
  .banner-section .content-box{
    
-    margin-top: 30% !important;
+    margin-top: 25% !important;
     background-color: transparent !important;
 
     text-align: center;
     margin-left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-46%);
     }
 
 @media only screen and (max-width: 1040px){
@@ -798,12 +1152,13 @@ ul.speakers-type-list .speakers-active:hover li{
         <div class="header-upper">
         	<div class="outer-container">
             	<div class="clearfix">
-            		<span class="init-dialogue Upper">Get ready for<br></span>
+            		
                 	<div class="pull-left logo-box">
                     	<div class="logo"><a href="#"><img src="images/logo-techx.png" height="40" width="130" alt="" title=""></a></div>
                     </div>
                     <br>
                     <span class="init-dialogue Lower" style="text-decoration: unset; padding-left: 35px;">Technology. Leadership. Innovation.<br></span>
+                    <span class="init-dialogue Lower" style="text-decoration: unset; padding-left: 25px; color: #fff;">#cityofJoy | #ieeeTechX<br></span>
                    	
                    	<div class="nav-outer clearfix">
                     
@@ -855,101 +1210,19 @@ ul.speakers-type-list .speakers-active:hover li{
 
 
     	<div class="content-box" style="">
-    		<span class="init-content-dialogue Upper" style="font-size: 29px; color: #f2048a; ">Get ready for<br></span>
+    		
                 	<div class="logo-box">
-                    	<div class="logo"><a href="#"><img style="width: 90vw;" src="images/logo-techx.png" height="40" width="130" alt="" title=""></a></div>
+                    	<div class="logo"><a href="#"><img style="width: 90vw;" src="images/logo-techX-3.png" height="40" width="130" alt="" title=""></a></div>
                     </div>
                     <br>
                     <span class="text">Eastern India Techno-Management Summit</span>
                     <br>
                     <span class="init-content-dialogue Lower" style="text-decoration: unset;font-size: 18px; color: #f2048a;">Technology. Leadership. Innovation.<br></span>
+                    <span class="init-content-dialogue Lower" style="text-decoration: unset; padding-left: 5px; font-size: 15px; color: #fff;">#cityofJoy | #ieeeTechX<br></span>
     	</div>
-        <!--<div class="banner-carousel owl-carousel owl-theme">
-        	<div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.4)),url(images/gallery/background.svg) ,linear-gradient(to left , #12114a , #12114a); background-size: cover;">
-                <div class="auto-container clearfix">
-                	
-                    <div class="content-box">
-                    	
-                        
-                        <div class="text">Kolkata Section Computer Society Students and Young Professional Congress</div>
-                        <div class="btn-box clearfixr">
-                            <a href="#" class="theme-btn btn-style-two">Stay Tuned!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-       
-            <div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.3)), url(images/main-slider/banner2.jpg); background-size: cover;">
-                <div class="auto-container">
-                    <div class="content-box">
-                    
-                        
-                        <div class="text">Kolkata Section Computer Society Students and Young Professional Congress</div>
-                        <div class="btn-box clearfixr">
-                            <a href="#" class="theme-btn btn-style-two">Stay Tuned!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.3)), url(images/main-slider/8.jpg); background-size: cover;">
-                <div class="auto-container clearfix">
-                    <div class="content-box">
-                    	
-                        
-                        <div class="text">Kolkata Section Computer Society Students and Young Professional Congress</div>
-                        <div class="btn-box clearfixr">
-                            <a href="#" class="theme-btn btn-style-two">Stay Tuned!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="slide-item" style="background:linear-gradient(to left , rgba(0,0,0,0.4) , rgba(0,0,0,0.3)), url(images/main-slider/banner4.jpg); background-size: cover;">
-                <div class="auto-container clearfix">
-
-                	
-                    <div class="content-box">
-                    	
-                        <div class="text">Kolkata Section Computer Society Students and Young Professional Congress</div>
-                        <div class="btn-box clearfixr">
-                            <a href="#" class="theme-btn btn-style-two">Stay Tuned!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
-        </div>-->
     </section>
     <!-- End Bnner Section -->
-
-
-<!--
-
-    <section class="mycontainer" style="width:100%;background-color: rgb(18, 17, 74)!important;">
-    	<span style="position: relative;">
-    	<span class="icon icon-circle-2" style="position: absolute;
-    background-repeat: no-repeat;
-    background-position: center;left: 20px;
-    top: -10px;
-    opacity: 0.7;
-    transform: scale(0.8);"></span></span>
-    <span style="position: relative; float: right;">
-<span class="icon icon-circle-3" style="position: absolute;
-    background-repeat: no-repeat;
-    background-position: center;right: -14px;
-    top: 70px;
-    opacity: 0.3;
-    transform: scale(0.6);"></span></span>
-    <div class="jumbotron Countdown-timer" id="Countdown-timer">
-    	<span style="white-space: nowrap;display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;">
-    	<span class="countdown-inner-container" style=""><span class="number-part" id="days"></span><span>days</span></span>
-    	<span class="countdown-inner-container"><span class="number-part" id="hours"></span><span>hours</span></span>
-    	<span class="countdown-inner-container"><span class="number-part" id="minutes"></span><span>minutes</span></span>
-    	<span class="countdown-inner-container"><span class="number-part" id="seconds"></span><span>seconds</span></span>
-    	</span>
-    </div></section>-->
 
 
 
@@ -974,69 +1247,62 @@ ul.speakers-type-list .speakers-active:hover li{
         <div class="auto-container">
             <div class="row">
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-1.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/speakers.png" alt=""></div>
                         <h4><a href="#">Industry Speakers</a></h4>
                         <div class="text">Learn from the leading experts at Intel, Google, Cisco, IEEE and more.</div>
                     </div>
                 </div>
 
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-2.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/delegates.png" alt=""></div>
                         <h4><a href="#">250+ Delegates</a></h4>
                         <div class="text">Meet people from the leading universities in the country.</div>
                     </div>
                 </div>
 
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-3.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/hands-on-experience.png" alt=""></div>
                         <h4><a href="#">Hands-On Experiences</a></h4>
                         <div class="text">Exciting workshops where you experience the bleeding edge of tech with your own hands.</div>
                     </div>
                 </div>
 
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/Innovative-challenges.png" alt=""></div>
                         <h4><a href="#">Innovative Challenges</a></h4>
                         <div class="text">Specially curated contests in every track to put your skills to the test.</div>
                     </div>
                 </div>
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/networking.png" alt=""></div>
                         <h4><a href="#">Networking Sessions</a></h4>
                         <div class="text">Exclusive sessions for network building. 
 								<br>Because. Connections. Matter.</div>
                     </div>
                 </div>
+                
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
-                        <h4><a href="#">IEEE Student Branch Meet</a></h4>
-                        <div class="text">Get exclusive access to future events before anyone else!</div>
-                    </div>
-                </div>
-                <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
-                    <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/leadership.png" alt=""></div>
                         <h4><a href="#">Campus to Corporate Leap</a></h4>
                         <div class="text">Develop the skills needed to face the corporate at our panel discussion.</div>
                     </div>
                 </div>
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/exotic-location.png" alt=""></div>
                         <h4><a href="#">Exotic Location</a></h4>
                         <div class="text">Poolside events and beachside ice-breaking sessions. 
 							<br>Because Why Not?
@@ -1044,17 +1310,17 @@ ul.speakers-type-list .speakers-active:hover li{
                     </div>
                 </div>
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/socials.png" alt=""></div>
                         <h4><a href="#">Socials</a></h4>
                         <div class="text">Music and cultural gigs are always in high demand.</div>
                     </div>
                 </div>
                 <!-- Feature Block Two -->
-                <div class="feature-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInDown">
+                <div class="feature-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
                     <div class="inner-box">
-                        <div class="icon"><img src="images/resource/feature-2-4.png" alt=""></div>
+                        <div class="icon"><img src="images/icons/gala-dinner.png" alt=""></div>
                         <h4><a href="#">Gala Dinner</a></h4>
                         <div class="text">Indulge in the finest culinary cuisines at a luxury resort. </div>
                     </div>
@@ -1085,59 +1351,7 @@ ul.speakers-type-list .speakers-active:hover li{
 
 
 
-   <!-- Events Section -->
- <!-- <section class="topic-section">
-	<div class="topic-container">
-		<div class="list">
-			 <div class="inner-column" style="background-image: url(images/resource/backevents2.png); background-size: contain; background-position: center;">
-                            <div class="inner">
-                                <div class="info-box location">
-                                    <span class="icon flaticon-location-pin"></span>
-                                    <div class="text">Kolkata, India</div>
-                                </div>
-
-                                <div class="info-box date">
-                                    <span class="icon flaticon-small-calendar"></span>
-                                    <div class="text">28th feb to 1st march 2020</div>
-                                </div>-->
-
-                                <!--<div class="info-box time">
-                                    <span class="icon flaticon-clock-1"></span>
-                                    <div class="text">To be announced</div>
-                                </div>-->
-                         <!--   </div>
-                        </div>
-		</div>
-		<div class="slides">
-			<ul>
-				<li class="itemslide theactive">
-					<span class="item-icon"><i class="fas fa-user-tie"></i></span>
-					<span class="item-details">200+ delegates</span>
-				</li>
-				<li class="itemslide">
-					<span class="item-icon"><i class="fas fa-code"></i></span>
-					<span class="item-details">Hackathon</span>
-				</li>
-				<li class="itemslide">
-					<span class="item-icon"><i class="fas fa-shuttle-van"></i></span>
-					<span class="item-details">Local tours</span>
-				</li>
-				<li class="itemslide">
-					<span class="item-icon"><i class="fas fa-user-friends"></i></span>
-					<span class="item-details">Socials</span>
-				</li>
-			</ul>
-			<div class="button-container" style="position: relative;">
-			<div class="button" id="slide-next" style="position: absolute;right: 30px;height: 30px; width: 30px; font-size: 13px;"><i class="fa fa-arrow-right"></i></div>
-			<div class="button" id="slide-previous" style="position: absolute; left: 30px;height: 30px; width: 30px; font-size: 13px;"><i class="fa fa-arrow-left"></i></div>
-			</div>
-		</div>
-	</div>
-</section>-->
-<!--End Events Section -->
-
-
-
+   
 
 
 
@@ -1206,7 +1420,7 @@ ul.speakers-type-list .speakers-active:hover li{
                         </div>
 
                         
-                        <div class="content-details" id="">
+                       <!-- <div class="content-details" id="">
                             <div class="row">
                             	<div class="image-column col-lg-6 col-md-12 col-sm-12">
                                     <div class="inner-column">
@@ -1225,7 +1439,7 @@ ul.speakers-type-list .speakers-active:hover li{
                                 </div>
                                 
                             </div>
-                        </div>
+                        </div>-->
 
                         
                         
@@ -1257,354 +1471,69 @@ ul.speakers-type-list .speakers-active:hover li{
 
 
             <div class="tracks-container">
-            	<div class="tracks-info jumbotron">
+            	<div class="tracks-info active-info jumbotron wow fadeInUp">
             		<div class="sec-title">
-            			<h4>Artificial Intelligence & Machine Learning</h4>
+            			<h4>Deep Learning and Neural Networks track</h4>
             		</div>
+            		<span class="float-text" style="opacity: 1; top: -6px;"><img src="images/icons/ml.png" style="max-height: 140px;opacity: 0.13;filter: saturate(0);transform: rotate(-15deg);"></span>
             		<div class="text">
-            			<span>Workshops, and engaging sessions to enhance your concepts of Artificial Intelligence together with Machine Learning that bestows a satisfying learning experience.</span>
+            			<span>Neural Networks is the powering stone for the next generation of future applications. With applications embedded in every domain and industry, this skill has become indispensable to modern engineers for truly make an impact. Learn to build powerful scalable AI-enabled applications and get a holistic overview on the future of the Machine Learning.</span>
             		</div>
             	</div>
-            	<div class="tracks-info jumbotron">
+            	<div class="tracks-info jumbotron wow fadeInUp">
             		<div class="sec-title">
-            			<h4>5G - Networking</h4>
+            			<h4>5G Networks track</h4>
             		</div>
+            		<span class="float-text" style="opacity: 1; top: -6px;"><img src="images/icons/5G.png" style="max-height: 140px;opacity: 0.13;filter: saturate(0);transform: rotate(-15deg);"></span>
             		<div class="text">
-            			<span>It’s 5G and it’s fast. Expect powerful talks, hands-on workshops and a plethora of learning opportunities. 
+            			<span>With the advent of high-speed internet, the world has evolved to support more powerful applications which would not have been possible without 5G. One of the most advanced developments in modern communications, which can support speeds of up to Giga-bits-per-second, this hands-on workshop and keynote session will enable you to build the next impact driven 5G applications.
 							</span>
             		</div>
             	</div>
-            	<div class="tracks-info jumbotron">
+            	<div class="tracks-info jumbotron  mobile-active-info wow fadeInUp">
             		<div class="sec-title">
-            			<h4>Circuit Design and PCB</h4>
+            			<h4>Circuit Design and PCB track</h4>
             		</div>
+            		<span class="float-text" style="opacity: 1; top: -6px;"><img src="images/icons/pcb.png" style="max-height: 140px;opacity: 0.13;filter: saturate(0);transform: rotate(-15deg);"></span>
             		<div class="text">
-            			<span>A one-of-a-kind PCB designing workshop that took several IEEE events by a whiff, we now look forward to seeing the same amount of enthusiasm in TechX. Expect to gather knowledge, experience and have loads of fun with electronics!</span>
+            			<span>A Hands-on workshop mainly focused to attract makers and developers to learn about the intricacies of Electronics. It was mainly focused to enable students to learn Electronics and understand the practical aspects of it. Though a very complicated topic, this experience will allow you to design Printed Circuit Boards(PCBs) and build real circuits and watch them come to live.</span>
             		</div>
             	</div>
-            	<div class="tracks-info jumbotron">
+            	<div class="tracks-info active-info mobile-inactive-info  jumbotron wow fadeInUp">
+
             		<div class="sec-title">
-            			<h4>Leadership</h4>
+            			<h4>Leadership track</h4>
             		</div>
+            		<span class="float-text" style="opacity: 1; top: -6px;"><img src="images/icons/lead.png" style="max-height: 140px;opacity: 0.13;filter: saturate(0);transform: rotate(-15deg);"></span>
             		<div class="text">
-            			<span>Leaders are how we perceive them. A leader and an innovator, Imbesat Ahmed,shall light us towards shaping one of the most sought after skills in today’s generation.   </span>
+            			<span>Learn to lead. Technology is important, however without the proper set of leadership skills it’s seldom possible to stand out in a crowd. Learn to combine technology with leadership to drive the next generation of products in the market. Learn through specially designed challenges and workshops to bring out the leader in you.
+						  </span>
             		</div>
             	</div>
-            	<div class="tracks-info jumbotron">
+            	<div class="tracks-info active-info jumbotron wow fadeInUp">
             		<div class="sec-title">
-            			<h4>Competitive Programming </h4>
+            			<h4>Competitive Programming track</h4>
             		</div>
+            		<span class="float-text" style="opacity: 1; top: -6px;"><img src="images/icons/coding.png" style="max-height: 140px;opacity: 0.13;filter: saturate(0);transform: rotate(-15deg);"></span>
             		<div class="text">
-            			<span></span>
+            			<span>With programming giants focusing on competitive coding examinations, learning to thrive in this domain is crucial for most software aspirants. Learn the tactics of navigating through the challenges and puzzles at this engaging workshop and keynote.</span>
             		</div>
             	</div>
-            	<div class="tracks-info jumbotron">
+            	<div class="tracks-info jumbotron wow fadeInUp">
             		<div class="sec-title">
-            			<h4>Progressive Web Apps (PWA) Workshop</h4>
+            			<h4>Progressive Web Apps (PWA) Workshop track</h4>
             		</div>
+            		<span class="float-text" style="opacity: 1; top: -6px;"><img src="images/icons/webapp.png" style="max-height: 140px;opacity: 0.13;filter: saturate(0);transform: rotate(-15deg);"></span>
             		<div class="text">
-            			<span></span>
+            			<span>A Progressive Web App is a web app that uses modern web capabilities to deliver an app-like experience to users. With modern applications like Whatsapp and Facebook heavily relying on this technology to provide a seamless UX to their user base, learning this skill will allow you to deliver a uniform experience of your software idea throughout OS. This hands-on workshop will ensure you leave the session with a self-designed PWA application in your pocket.</span>
             		</div>
             	</div>
 
             </div>
 
-            <!--<div class="events-tab tabs-box">
-                <ul class="tab-buttons clearfix">
-                    <li class="tab-btn active-btn" data-tab="#tab-1">1</li>
-                    <li class="tab-btn" data-tab="#tab-2">2</li>
-                    <li class="tab-btn" data-tab="#tab-3">3</li>
-                </ul>-->
+            
 
-                <!--Tabs Content-->
-               <!-- <div class="tabs-content">-->
-                    <!--Tab / Active Tab-->
-                   <!-- <div class="tab active-tab" id="tab-1">
-                        <div class="content">
-                            <div class="row">-->
-                                <!-- Shedule Column -->
-                               <!-- <div class="shedule-column col-lg-5 col-md-12 col-sm-12">
-                                    <div class="inner-column">
-                                        <div class="shedule-box">
-                                            <h3 class="day">DAY 1</h3>
-                                            <span class="date">28th February, Friday </span>
-                                            <div class="text">Will be updated shortly. Stay tuned!</div>
-                                            <div class="link-box"><a href="#"><span class="fa fa-angle-right"></span> More Details</a></div>
-                                        </div>
-                                    </div>
-                                </div>-->
-
-                                <!-- Author Column -->
-                                <!--<div class="author-column col-lg-7 col-sm-12 col-sm-12">
-                                    <div class="inner-column">
-                                        <div class="row">
-                                            
-                                            <div class="author-block col-lg-6 col-md-6 col-sm-12">
-                                                <div class="inner-box">
-                                                    <div class="thumb">
-                                                        <img src="images/resource/author-thumb-1.png" alt="">
-                                                        <span class="name">Dominika</span>
-                                                    </div>
-                                                    <div class="info">
-                                                        <h5 class="title"><a href="#">Mobile UX London</a></h5>
-                                                        <span class="date">9:00am, 7 jan 2019</span>
-                                                    </div>
-                                                    <div class="text">Ut quo decore libris erroribus, vel ne omnium invidunt, ut eos dicat aeque int elle gat. Diam tota omnesqu Sed</div>
-                                                </div>
-                                            </div>
-
-                                            
-                                            <div class="author-block col-lg-6 col-md-6 col-sm-12">
-                                                <div class="inner-box">
-                                                    <div class="thumb">
-                                                        <img src="images/resource/author-thumb-2.png" alt="">
-                                                        <span class="name">Dominika</span>
-                                                    </div>
-                                                    <div class="info">
-                                                        <h5 class="title"><a href="#">Big Data & Analytics </a></h5>
-                                                        <span class="date">10:00am, 7 jan 2019</span>
-                                                    </div>
-                                                    <div class="text">Ut quo decore libris erroribus, vel ne omnium invidunt, ut eos dicat aeque int elle gat. Diam tota omnesqu Sed</div>
-                                                </div>
-                                            </div>
-
-                                            
-                                            <div class="author-block col-lg-6 col-md-6 col-sm-12">
-                                                <div class="inner-box">
-                                                    <div class="thumb">
-                                                        <img src="images/resource/author-thumb-3.png" alt="">
-                                                        <span class="name">Dominika</span>
-                                                    </div>
-                                                    <div class="info">
-                                                        <h5 class="title"><a href="#">Mobile 360 MENA </a></h5>
-                                                        <span class="date">12:00am, 7 jan 2019</span>
-                                                    </div>
-                                                    <div class="text">Ut quo decore libris erroribus, vel ne omnium invidunt, ut eos dicat aeque int elle gat. Diam tota omnesqu Sed</div>
-                                                </div>
-                                            </div>
-
-                                            
-                                            <div class="author-block col-lg-6 col-md-6 col-sm-12">
-                                                <div class="inner-box">
-                                                    <div class="thumb">
-                                                        <img src="images/resource/author-thumb-4.png" alt="">
-                                                        <span class="name">Dominika</span>
-                                                    </div>
-                                                    <div class="info">
-                                                        <h5 class="title"><a href="#">DAM San Diego</a></h5>
-                                                        <span class="date">9:00am, 7 jan 2019</span>
-                                                    </div>
-                                                    <div class="text">Ut quo decore libris erroribus, vel ne omnium invidunt, ut eos dicat aeque int elle gat. Diam tota omnesqu Sed</div>
-                                                </div>
-                                            </div>
-
-                                            
-                                            <div class="author-block col-lg-6 col-md-6 col-sm-12">
-                                                <div class="inner-box">
-                                                    <div class="thumb">
-                                                        <img src="images/resource/author-thumb-5.png" alt="">
-                                                        <span class="name">Dominika</span>
-                                                    </div>
-                                                    <div class="info">
-                                                        <h5 class="title"><a href="#">Mobile 360 MENA </a></h5>
-                                                        <span class="date">12:00am, 7 jan 2019</span>
-                                                    </div>
-                                                    <div class="text">Ut quo decore libris erroribus, vel ne omnium invidunt, ut eos dicat aeque int elle gat. Diam tota omnesqu Sed</div>
-                                                </div>
-                                            </div>
-
-                                            
-                                            <div class="author-block col-lg-6 col-md-6 col-sm-12">
-                                                <div class="inner-box">
-                                                    <div class="thumb">
-                                                    </div>
-                                                    <div class="info">
-                                                        <h5 class="title"><a href="#">Closing party</a></h5>
-                                                        <span class="date">9:00am, 7 jan 2019</span>
-                                                    </div>
-                                                    <div class="text">Ut quo decore libris erroribus, vel ne omnium invidunt, ut eos dicat aeque int elle gat. Diam tota omnesqu Sed</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>-->
-                            <!--</div>
-                        </div>
-                    </div>-->
-
-                    <!--Tab-->
-                    <!--<div class="tab" id="tab-2">
-                        <div class="content">
-                            <div class="row">
-                                
-                                <div class="shedule-column col-lg-5 col-md-12 col-sm-12">
-                                    <div class="inner-column">
-                                        <div class="shedule-box">
-                                            <h3 class="day">DAY 2</h3>
-                                            <span class="date">29th February, Saturday </span>
-                                            <div class="text">Will be updated shortly. Stay tuned! </div>
-                                            <div class="link-box"><a href="#"><span class="fa fa-angle-right"></span> More Details</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                
-                                <div class="author-column col-lg-7 col-sm-12 col-sm-12">
-                                    <div class="inner-column">
-                                        <div class="row">-->
-                                            <!-- Author block -->
-                                            <!--<div class="author-block col-lg-6 col-md-6 col-sm-12">
-                                                <div class="inner-box">
-                                                    <div class="thumb">
-                                                        <img src="images/resource/author-thumb-1.png" alt="">
-                                                        <span class="name">Dominika</span>
-                                                    </div>
-                                                    <div class="info">
-                                                        <h5 class="title"><a href="#">Big Data & Analytics</a></h5>
-                                                        <span class="date">10:00am, 7 jan 2019</span>
-                                                    </div>
-                                                    <div class="text">Ut quo decore libris erroribus, vel ne omnium invidunt, ut eos dicat aeque int elle gat. Diam tota omnesqu Sed</div>
-                                                </div>
-                                            </div>-->
-
-                                            <!-- Author block -->
-                                            <!--<div class="author-block col-lg-6 col-md-6 col-sm-12">
-                                                <div class="inner-box">
-                                                    <div class="thumb">
-                                                        <img src="images/resource/author-thumb-2.png" alt="">
-                                                        <span class="name">Dominika</span>
-                                                    </div>
-                                                    <div class="info">
-                                                        <h5 class="title"><a href="#">Mobile 360 MENA</a></h5>
-                                                        <span class="date">11:00am, 7 jan 2019</span>
-                                                    </div>
-                                                    <div class="text">Ut quo decore libris erroribus, vel ne omnium invidunt, ut eos dicat aeque int elle gat. Diam tota omnesqu Sed</div>
-                                                </div>
-                                            </div>-->
-
-                                            <!-- Author block -->
-                                            <!--<div class="author-block col-lg-6 col-md-6 col-sm-12">
-                                                <div class="inner-box">
-                                                    <div class="thumb">
-                                                        <img src="images/resource/author-thumb-3.png" alt="">
-                                                        <span class="name">Dominika</span>
-                                                    </div>
-                                                    <div class="info">
-                                                        <h5 class="title"><a href="#">DAM San Diego</a></h5>
-                                                        <span class="date">12:00am, 7 jan 2019</span>
-                                                    </div>
-                                                    <div class="text">Ut quo decore libris erroribus, vel ne omnium invidunt, ut eos dicat aeque int elle gat. Diam tota omnesqu Sed</div>
-                                                </div>
-                                            </div>-->
-
-                                            <!-- Author block -->
-                                            <!--<div class="author-block col-lg-6 col-md-6 col-sm-12">
-                                                <div class="inner-box">
-                                                    <div class="thumb">
-                                                        <img src="images/resource/author-thumb-4.png" alt="">
-                                                        <span class="name">Dominika</span>
-                                                    </div>
-                                                    <div class="info">
-                                                        <h5 class="title"><a href="#">Mobile UX London</a></h5>
-                                                        <span class="date">9:00am, 7 jan 2019</span>
-                                                    </div>
-                                                    <div class="text">Ut quo decore libris erroribus, vel ne omnium invidunt, ut eos dicat aeque int elle gat. Diam tota omnesqu Sed</div>
-                                                </div>
-                                            </div>-->
-                                        <!--</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
-
-                    <!--Tab-->
-                   <!-- <div class="tab" id="tab-3">
-                        <div class="content">
-                            <div class="row">
-                               
-                                <div class="shedule-column col-lg-5 col-md-12 col-sm-12">
-                                    <div class="inner-column">
-                                        <div class="shedule-box">
-                                            <h3 class="day">DAY 3</h3>
-                                            <span class="date">1st March, Sunday</span>
-                                            <div class="text">Will be updated shortly. Stay tuned!</div>
-                                            <div class="link-box"><a href="#"><span class="fa fa-angle-right"></span> More Details</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                              
-                                <div class="author-column col-lg-7 col-sm-12 col-sm-12">
-                                    <div class="inner-column">
-                                        <div class="row">-->
-                                            <!-- Author block -->
-                                            <!--<div class="author-block col-lg-6 col-md-6 col-sm-12">
-                                                <div class="inner-box">
-                                                    <div class="thumb">
-                                                        <img src="images/resource/author-thumb-1.png" alt="">
-                                                        <span class="name">Dominika</span>
-                                                    </div>
-                                                    <div class="info">
-                                                        <h5 class="title"><a href="#">Big Data & Analytics</a></h5>
-                                                        <span class="date">10:00am, 7 jan 2019</span>
-                                                    </div>
-                                                    <div class="text">Ut quo decore libris erroribus, vel ne omnium invidunt, ut eos dicat aeque int elle gat. Diam tota omnesqu Sed</div>
-                                                </div>
-                                            </div>-->
-
-                                            <!-- Author block -->
-                                            <!--<div class="author-block col-lg-6 col-md-6 col-sm-12">
-                                                <div class="inner-box">
-                                                    <div class="thumb">
-                                                        <img src="images/resource/author-thumb-2.png" alt="">
-                                                        <span class="name">Dominika</span>
-                                                    </div>
-                                                    <div class="info">
-                                                        <h5 class="title"><a href="#">Mobile 360 MENA</a></h5>
-                                                        <span class="date">11:00am, 7 jan 2019</span>
-                                                    </div>
-                                                    <div class="text">Ut quo decore libris erroribus, vel ne omnium invidunt, ut eos dicat aeque int elle gat. Diam tota omnesqu Sed</div>
-                                                </div>
-                                            </div>-->
-
-                                            <!-- Author block -->
-                                            <!--<div class="author-block col-lg-6 col-md-6 col-sm-12">
-                                                <div class="inner-box">
-                                                    <div class="thumb">
-                                                        <img src="images/resource/author-thumb-3.png" alt="">
-                                                        <span class="name">Dominika</span>
-                                                    </div>
-                                                    <div class="info">
-                                                        <h5 class="title"><a href="#">DAM San Diego</a></h5>
-                                                        <span class="date">12:00am, 7 jan 2019</span>
-                                                    </div>
-                                                    <div class="text">Ut quo decore libris erroribus, vel ne omnium invidunt, ut eos dicat aeque int elle gat. Diam tota omnesqu Sed</div>
-                                                </div>
-                                            </div>-->
-
-                                            <!-- Author block -->
-                                            <!--<div class="author-block col-lg-6 col-md-6 col-sm-12">
-                                                <div class="inner-box">
-                                                    <div class="thumb">
-                                                        <img src="images/resource/author-thumb-4.png" alt="">
-                                                        <span class="name">Dominika</span>
-                                                    </div>
-                                                    <div class="info">
-                                                        <h5 class="title"><a href="#">Mobile UX London</a></h5>
-                                                        <span class="date">9:00am, 7 jan 2019</span>
-                                                    </div>
-                                                    <div class="text">Ut quo decore libris erroribus, vel ne omnium invidunt, ut eos dicat aeque int elle gat. Diam tota omnesqu Sed</div>
-                                                </div>
-                                            </div>-->
-                                       <!-- </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
+                    
         </div>
     </section>
     <!--End Event Highlight -->
@@ -1630,7 +1559,7 @@ ul.speakers-type-list .speakers-active:hover li{
    
 
     <!-- Speakers Section Two -->
-    <section class="speakers-section-two style-two alternate" id="speakers-section">
+    <section class="speakers-section-two style-two alternate" id="spk">
         <span class="float-text">Event Speaker</span>
 
 
@@ -1658,69 +1587,74 @@ ul.speakers-type-list .speakers-active:hover li{
 
 
 
-
-
-
-
-
+            	  <!--speaker block start-->
                 <!-- Feature Block -->
-                <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow zoomIn Leadershipis">
+                <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow zoomIn Networking">
                     <div class="image-box">
-                        <figure class="image"><img src="images/resource/imbesat.jpg" alt=""></figure>
+                        <figure class="image"><img src="images/resource/anuj.jpg" alt=""></figure>
                         <div class="overlay-box">
-                            <a href="#popup_1" class="link view-speaker ts-image-popup" data-effect="mfp-zoom-in"><span class="flaticon-add-1"></span></a>
+                            <a href="#popup_4" class="link view-speaker ts-image-popup" data-effect="mfp-zoom-in"><span class="flaticon-add-1"></span></a>
                             <div class="info">
-                                <h5 class="name"><a href="#">Imbesat Ahmad</a></h5>
-                                <span class="designation">Founder, RISE</span>
+                                <h5 class="name"><a href="#">Anuj Duggal</a></h5>
+                                <span class="designation">Innovation Program Manager - Corporate Affairs, Intel India</span>
                             </div>
                         </div>
                     </div>
+                    <!-- Feature Block end -->
 
                     <!-- popup start-->
-                    <div id="popup_1" class="container ts-speaker-popup mfp-hide">
+                    <div id="popup_4" class="container ts-speaker-popup mfp-hide">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="ts-speaker-popup-img">
-                                    <img src="images/resource/imbesat.jpg" alt="">
+                                    <img src="images/resource/anuj.jpg" alt="">
                                 </div>
                             </div><!-- col end-->
                             <div class="col-lg-6">
                                 <div class="ts-speaker-popup-content">
-                                    <h3 class="ts-title">Imbesat Ahmad</h3>
-                                    <span class="speakder-designation">Founder, RISE</span>
+                                    <h3 class="ts-title">Anuj Duggal</h3>
+                                    <span class="speakder-designation">Innovation Program Manager - Corporate Affairs, Intel India</span>
                                     <p>
-                                        Imbesat pursued Integrated M. Sc., Physics at IIT Kharagpur. Hailing from Patna, Bihar, Imbesat has been actively involved in raising awareness about latest study techniques across India. He was invited, and had subsequently mentored and taught IIT-JEE aspirants at the acclaimed Super - 30, Patna.
-                                        Equalizing educational opportunities for underprivileged students in Kashmir - Building tech. based educational products at RISE. 
+                                        Working in Corporate Affairs Group and running Innovation program to inspire, equip and empower the next generation of technology innovators, with extensive engagement with Government & Non-Government agencies, Academia, Communities and Ecosystem to build program scale.
                                     </p>
                                     <h4 class="session-name">
-                                        Sessions by Imbesat
+                                        Sessions by Anuj
                                     </h4>
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <div class="speaker-session-info">
                                                 <h4>Day 1</h4>
-                                                <span> Updates coming soon!</span>
+                                                <span>will be Updated soon</span>
                                                 <p> ... </p>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="speaker-session-info">
-                                                <h4>Day 2</h4>
-                                                <span> Updates coming soon!</span>
+                                                <h4>Day 1</h4>
+                                                <span>Will be updated soon</span>
                                                 <p> ... </p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="ts-speakers-social">
-                                        <a href="https://www.facebook.com/imbe7at"><i class="fab fa-facebook"></i></a>
-                                        <a href="https://www.linkedin.com/in/imbesat-ahmad-b2465222/"><i class="fab fa-linkedin"></i></a>
-                                        
+                                        <a href="https://www.facebook.com/AnujDuggal88"><i class="fab fa-facebook"></i></a>
+                                        <a href="https://twitter.com/anujduggal21?lang=en"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://www.linkedin.com/in/anujduggal21/?originalSubdomain=in"><i class="fab fa-linkedin"></i></a>
                                     </div>
-                                </div><!-- ts-speaker-popup-content end-->
+                                </div>
+                                <!-- ts-speaker-popup-content end-->
                             </div>
                         </div>
                     </div>
+                    <!-- popup end-->
+
+
+
+
                 </div>
+
+
+                <!--speaker block end-->
 
                 
 
@@ -1804,6 +1738,16 @@ ul.speakers-type-list .speakers-active:hover li{
 
                 <!--speaker block end-->
 
+
+
+
+
+
+
+
+
+
+
                  <!--speaker block start-->
                 <!-- Feature Block -->
                 <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow zoomIn Leadershipis">
@@ -1873,6 +1817,70 @@ ul.speakers-type-list .speakers-active:hover li{
 
                 <!--speaker block end-->
 
+
+
+
+
+
+                <!-- Feature Block -->
+                <div class="speaker-block-two col-lg-3 col-md-6 col-sm-12 wow zoomIn Leadershipis">
+                    <div class="image-box">
+                        <figure class="image"><img src="images/resource/imbesat.jpg" alt=""></figure>
+                        <div class="overlay-box">
+                            <a href="#popup_1" class="link view-speaker ts-image-popup" data-effect="mfp-zoom-in"><span class="flaticon-add-1"></span></a>
+                            <div class="info">
+                                <h5 class="name"><a href="#">Imbesat Ahmad</a></h5>
+                                <span class="designation">Founder, RISE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- popup start-->
+                    <div id="popup_1" class="container ts-speaker-popup mfp-hide">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="ts-speaker-popup-img">
+                                    <img src="images/resource/imbesat.jpg" alt="">
+                                </div>
+                            </div><!-- col end-->
+                            <div class="col-lg-6">
+                                <div class="ts-speaker-popup-content">
+                                    <h3 class="ts-title">Imbesat Ahmad</h3>
+                                    <span class="speakder-designation">Founder, RISE</span>
+                                    <p>
+                                        Imbesat pursued Integrated M. Sc., Physics at IIT Kharagpur. Hailing from Patna, Bihar, Imbesat has been actively involved in raising awareness about latest study techniques across India. He was invited, and had subsequently mentored and taught IIT-JEE aspirants at the acclaimed Super - 30, Patna.
+                                        Equalizing educational opportunities for underprivileged students in Kashmir - Building tech. based educational products at RISE. 
+                                    </p>
+                                    <h4 class="session-name">
+                                        Sessions by Imbesat
+                                    </h4>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="speaker-session-info">
+                                                <h4>Day 1</h4>
+                                                <span> Updates coming soon!</span>
+                                                <p> ... </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="speaker-session-info">
+                                                <h4>Day 2</h4>
+                                                <span> Updates coming soon!</span>
+                                                <p> ... </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ts-speakers-social">
+                                        <a href="https://www.facebook.com/imbe7at"><i class="fab fa-facebook"></i></a>
+                                        <a href="https://www.linkedin.com/in/imbesat-ahmad-b2465222/"><i class="fab fa-linkedin"></i></a>
+                                        
+                                    </div>
+                                </div><!-- ts-speaker-popup-content end-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 
                 
                    
@@ -1920,7 +1928,7 @@ ul.speakers-type-list .speakers-active:hover li{
 
 
     <!--Early-bird Pricing Section -->
-    <section class="pricing-section style-four Early-bird">
+    <section class="pricing-section style-four Early-bird" id="reg">
         <div class="anim-icons">
             <span class="icon icon-circle-1 wow zoomIn"></span>
             <span class="icon icon-circle-2 wow zoomIn" data-wow-delay="600ms"></span>
@@ -1934,8 +1942,49 @@ ul.speakers-type-list .speakers-active:hover li{
             </div>
 
             <div class="row">
+            	      <div class="pricing-block not-active col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
+                		<div class="queryis" style="position: absolute;top: 5px;left: 25px;z-index: 22;background-color: transparent;">
+                		<span style="display: flex;">
+                		    <i class="fa fa-question-circle-o" aria-hidden="true" style="color: #11124a; font-size: 16px; padding-top: 2.5px;"></i>
+                		    <h3 style="font-size: 14px; color: #11124a;padding-left: 6px;">Why are the ticket prices so high?</h3>
+                		</span>
+                		<div class="query-on-hover" style="border-radius:0.333rem;background-color: #dedede;padding: 5px;text-align: center;">
+                			<span class="text" style="font-size: 13px;">
+                				
+                				<h5 style="font-size: 12px;">“The tickets include hotel rooms, breakfast, lunch, dinner, event tickets, recreational activities and travel assistance for the entire 3 days at a 4 Star resort. The pricing has been heavily subsidised for our participants with over 60% less than normal rates at any standard luxury retreat. Also, the payment is not required upfront. It’s only necessary if you get shortlisted for Phase - 2. Please note, submitting this form doesn’t guarantee selection to Phase - 2 due to the huge volume of applications.”</h5></span></div>
+                	</div>
+                     <div class="inner-box">
+                        <div class="price early">INR 1799</div>
+                        <div class="price original">1999</div>
+                        <figure class="image"><img src="images/icons/day-pass.png" alt=""></figure>
+                        <h4 class="title">IEEE CS Member</h4>
+                        <ul class="features">
+                              <li>Three Days Congress Ticket</li>
+                            <li>Registration Kit,Technical Sessions,Hands-on Workshops,Challenges</li>
+                            <li>Accomodation (Check-in on 28th Feb & Check-out on 1st March)</li>
+                            <li>Meals and snacks inclusive of the gala dinner</li>
+                            <li>Access to socials and fun activities. </li>
+                            
+                            <li>T-shirts, Goodies and Networking</li>
+                            <li>Registration Kit,Technical Sessions,Hands-on Workshops,Challenges</li>
+                        </ul>
+                        <div class="btn-box">
+                            <a href="register.html" class="theme-btn">Register Now</a>
+                        </div>
+                    </div>
+                </div>
                 
-                <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="pricing-block active col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                		<div class="queryis" style="position: absolute;top: 5px;left: 25px;z-index: 22;background-color: transparent;">
+                		<span style="display: flex;">
+                		    <i class="fa fa-question-circle-o" aria-hidden="true" style="color: #fff; font-size: 16px; padding-top: 2.5px;"></i>
+                		    <h3 style="font-size: 14px; color: #fff;padding-left: 6px;">Why are the ticket prices so high?</h3>
+                		</span>
+                		<div class="query-on-hover" style="border-radius:0.333rem;background-color: #dedede;padding: 5px;text-align: center;">
+                			<span class="text" style="font-size: 13px;">
+                				
+                				<h5 style="font-size: 12px;">“The tickets include hotel rooms, breakfast, lunch, dinner, event tickets, recreational activities and travel assistance for the entire 3 days at a 4 Star resort. The pricing has been heavily subsidised for our participants with over 60% less than normal rates at any standard luxury retreat. Also, the payment is not required upfront. It’s only necessary if you get shortlisted for Phase - 2. Please note, submitting this form doesn’t guarantee selection to Phase - 2 due to the huge volume of applications.”</h5></span></div>
+                	</div>
                     <div class="inner-box">
                         <div class="price early">INR 2299</div>
                          <div class="price original">2499</div>
@@ -1943,9 +1992,15 @@ ul.speakers-type-list .speakers-active:hover li{
                         <h4 class="title">IEEE Member</h4>
                         <ul class="features">
                             <li>Three Days Congress Ticket</li>
-                            <li>Complete accomodation and Fooding</li>
-                            <li>Registration Kit</li>
+                            <li>Registration Kit,Technical Sessions,Hands-on Workshops,Challenges</li>
+                            <li>Accomodation (Check-in on 28th Feb & Check-out on 1st March)</li>
+                            <li>Meals and snacks inclusive of the gala dinner</li>
+                            <li>Access to socials and fun activities. </li>
+                            
                             <li>T-shirts, Goodies and Networking</li>
+                            <li>Registration Kit,Technical Sessions,Hands-on Workshops,Challenges</li>
+                          
+
                         </ul>
                         <div class="btn-box">
                             <a href="register.html" class="theme-btn">Register Now</a>
@@ -1954,42 +2009,44 @@ ul.speakers-type-list .speakers-active:hover li{
                 </div>
 
                 
-                <div class="pricing-block active col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
-                     <div class="inner-box">
-                        <div class="price early">INR 1799</div>
-                        <div class="price original">1999</div>
-                        <figure class="image"><img src="images/icons/day-pass.png" alt=""></figure>
-                        <h4 class="title">IEEE CS Member</h4>
-                        <ul class="features">
-                            <li>Three Days Congress Ticket</li>
-                            <li>Complete accomodation and Fooding</li>
-                            <li>Registration Kit</li>
-                            <li>T-shirts, Goodies and Networking</li>
-                        </ul>
-                        <div class="btn-box">
-                            <a href="register.html" class="theme-btn">Register Now</a>
-                        </div>
-                    </div>
-                </div>
+          
 
                 
-                <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="pricing-block not-active col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                	<div class="queryis" style="position: absolute;top: 5px;left: 25px;z-index: 22;background-color: transparent;">
+                		<span style="display: flex;">
+                		    <i class="fa fa-question-circle-o" aria-hidden="true" style="color: #11124a; font-size: 16px; padding-top: 2.5px;"></i>
+                		    <h3 style="font-size: 14px; color: #11124a;padding-left: 6px;">Why are the ticket prices so high?</h3>
+                		</span>
+                		<div class="query-on-hover" style="border-radius:0.333rem;background-color: #dedede;padding: 5px;text-align: center;">
+                			<span class="text" style="font-size: 13px;">
+                				
+                				<h5 style="font-size: 12px;">“The tickets include hotel rooms, breakfast, lunch, dinner, event tickets, recreational activities and travel assistance for the entire 3 days at a 4 Star resort. The pricing has been heavily subsidised for our participants with over 60% less than normal rates at any standard luxury retreat. Also, the payment is not required upfront. It’s only necessary if you get shortlisted for Phase - 2. Please note, submitting this form doesn’t guarantee selection to Phase - 2 due to the huge volume of applications.”</h5></span></div>
+                	</div>
                      <div class="inner-box">
                         <div class="price early">INR 2799</div>
                          <div class="price original">2999</div>
                         <figure class="image"><img src="images/icons/day-pass.png" alt=""></figure>
-                        <h4 class="title">Others</h4>
+                        <h4 class="title">NON IEEE</h4>
                         <ul class="features">
-                            <li>Three Days Congress Ticket</li>
-                            <li>Complete accomodation and Fooding</li>
-                            <li>Registration Kit</li>
+                             <li>Three Days Congress Ticket</li>
+                            <li>Registration Kit,Technical Sessions,Hands-on Workshops,Challenges</li>
+                            <li>Accomodation (Check-in on 28th Feb & Check-out on 1st March)</li>
+                            <li>Meals and snacks inclusive of the gala dinner</li>
+                            <li>Access to socials and fun activities. </li>
+                            
                             <li>T-shirts, Goodies and Networking</li>
+                            <li>Registration Kit,Technical Sessions,Hands-on Workshops,Challenges</li>
                         </ul>
                         <div class="btn-box">
                             <a href="register.html" class="theme-btn">Register Now</a>
                         </div>
                     </div>
                 </div>
+
+
+
+
             </div>
         </div>
     </section>
@@ -2012,26 +2069,8 @@ ul.speakers-type-list .speakers-active:hover li{
             </div>
 
             <div class="row">
-                
-                <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                    <div class="inner-box">
-                        <div class="price">INR 2799</div>
-                        <figure class="image"><img src="images/icons/day-pass.png" alt=""></figure>
-                        <h4 class="title">IEEE Member</h4>
-                        <ul class="features">
-                            <li>Three Days Congress Ticket</li>
-                            <li>Complete accomodation and Fooding</li>
-                            <li>Registration Kit</li>
-                            <li>T-shirts, Goodies and Networking</li>
-                        </ul>
-                        <div class="btn-box">
-                            <a href="register.html" class="theme-btn">Register Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="pricing-block active col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
+            	  <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
+                	
                      <div class="inner-box">
                         <div class="price">INR 2499</div>
                         <figure class="image"><img src="images/icons/day-pass.png" alt=""></figure>
@@ -2049,11 +2088,32 @@ ul.speakers-type-list .speakers-active:hover li{
                 </div>
 
                 
+                <div class="pricing-block active col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                    <div class="inner-box">
+                        <div class="price">INR 2799</div>
+                        <figure class="image"><img src="images/icons/day-pass.png" alt=""></figure>
+                        <h4 class="title">IEEE Member</h4>
+                        <ul class="features">
+                            <li>Three Days Congress Ticket</li>
+                            <li>Complete accomodation and Fooding</li>
+                            <li>Registration Kit</li>
+                            <li>T-shirts, Goodies and Networking</li>
+                        </ul>
+                        <div class="btn-box">
+                            <a href="register.html" class="theme-btn">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+              
+
+                
                 <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                      <div class="inner-box">
                         <div class="price">INR 2999</div>
                         <figure class="image"><img src="images/icons/day-pass.png" alt=""></figure>
-                        <h4 class="title">Others</h4>
+                        <h4 class="title">NON IEEE</h4>
                         <ul class="features">
                             <li>Three Days Congress Ticket</li>
                             <li>Complete accomodation and Fooding</li>
@@ -2090,30 +2150,26 @@ ul.speakers-type-list .speakers-active:hover li{
 
           <span class="text" style="padding-bottom: 60px; padding-right: 50px;">"High achievement always take place in the framework of high expectation."</br>
 
-						  Any event can be great by the ambience of the place where it happens. A place sets the environment as well as the mood of the participants. Without further ado we bring you  the venue for the <font style="font-weight: bold;">Tech-X Congress</font>. <font style="font-weight: bold;">‘Suncity Resort Mandarmani’</font>. Mandarmani is a seaside resort village (largest) in the state of West Bengal, India, and lies in East Midnapore district, at the northern end of the Bay of Bengal. With the breezes that come with the sea currents, the beautiful beaches and the everlasting sea will give you the journey full of inspiration, learning and fun. As it said that the best lessons learned are those that are taught outside the four walls of classroom so here we bring you a whole new beautiful classroom where you can enjoy learning, experience a whole new adventure and know many people from all around the country. So join us in this learning vacation revolving around amazing sunset view, steamy bonfire, placid strolling along the beach, provoking keynote speeches, captivating workshops and much more!</span>
+						 
+						  Any event can be great by the ambience of the place where it happens. A place sets the environment as well as the mood of the participants. Without further ado we bring you the venue for the <font style="font-weight: bold;">Tech-X Congress</font>. <font style="font-weight: bold;">‘Suncity Resort Mandarmani’</font>. As it said that the best lessons learned are those that are taught outside the four walls of classroom so here we bring you a whole new beautiful classroom where you can enjoy learning, experience a whole new adventure and know many people from all around the country. So join us in this learning vacation revolving around amazing sunset view, steamy bonfire, placid strolling along the beach, provoking keynote speeches, captivating workshops and much more.</span>
 			
 		</div>
 		<div class="slides">
 			<ul>
 				<li class="itemslide theactive">
-					<img src="images/gallery/pic9.jpg" alt="Mandarmani">
-				</li>
-				<li class="itemslide theactive">
-					<img src="images/gallery/pic6.jpg" alt="Mandarmani">
+					<img src="images/gallery/pic25.jpg" alt="Mandarmani">
 				</li>
 				<li class="itemslide">
-					<img src="images/gallery/pic12.jpg" alt="Mandarmani">
+					<img src="images/gallery/pic26.jpg" alt="Mandarmani">
 				</li>
 				<li class="itemslide">
-					<img src="images/gallery/pic10.jpg" alt="Mandarmani">
+					<img src="images/gallery/pic27.jpg" alt="Mandarmani">
 				</li>
-				<li class="itemslide">
-					 <img src="images/gallery/pic11.jpg" alt="Mandarmani">
-				</li>
+				
 			</ul>
 			<div class="button-container" style="position: relative;">
-			<div class="button" id="slide-next" style="position: absolute;left: 30px;height: 30px; width: 30px; font-size: 13px;"><i class="fa fa-arrow-left"></i></div>
-			<div class="button" id="slide-previous" style="position: absolute; right: 30px;height: 30px; width: 30px; font-size: 13px;"><i class="fa fa-arrow-right"></i></div>
+			<div class="button" id="slide-previous" style="position: absolute;left: 30px;height: 30px; width: 30px; font-size: 13px;"><i class="fa fa-arrow-left"></i></div>
+			<div class="button" id="slide-next" style="position: absolute; right: 30px;height: 30px; width: 30px; font-size: 13px;"><i class="fa fa-arrow-right"></i></div>
 			</div>
 		</div>
 	</div>
@@ -2122,60 +2178,49 @@ ul.speakers-type-list .speakers-active:hover li{
 
 
 
-<!-- Bnner Section -->
-<!--<section class="location-section" id="ven">
-    <div class="auto-container">
-    	<span class="float-text">Mandarmani</span>
-    	<div class="sec-title">
-    	  <h2>Destination</h2>
-          <h4>Suncity Resort, Mandarmani</h4>
-      </div>
 
-      
-
-
-          <span class="text" style="padding-bottom: 60px;">"High achievement always take place in the framework of high expectation."</br>
-
-						  Any event can be great by the ambience of the place where it happens. A place sets the environment as well as the mood of the participants. Without further ado we bring you  the venue for the <font style="font-weight: bold;">Tech-X Congress</font>. <font style="font-weight: bold;">‘Suncity Resort Mandarmani’</font>. Mandarmani is a seaside resort village (largest) in the state of West Bengal, India, and lies in East Midnapore district, at the northern end of the Bay of Bengal. With the breezes that come with the sea currents, the beautiful beaches and the everlasting sea will give you the journey full of inspiration, learning and fun. As it said that the best lessons learned are those that are taught outside the four walls of classroom so here we bring you a whole new beautiful classroom where you can enjoy learning, experience a whole new adventure and know many people from all around the country. So join us in this learning vacation revolving around amazing sunset view, steamy bonfire, placid strolling along the beach, provoking keynote speeches, captivating workshops and much more!</span>
-            <div class="banner-carousel owl-carousel owl-theme" style="margin-top: 50px;margin-bottom: 8px;">
-        	  <div class="slide-item" style=" background-size: cover;">
-        		<img src="images/gallery/pic9.jpg" alt="Mandarmani">
-                
-             </div>
-       
-            <div class="slide-item" style=" background-size: cover;">
-            	<img src="images/gallery/pic6.jpg" alt="Mandarmani">
-                
-            </div>
-
-            <div class="slide-item" style=" background-size: cover;">
-            	 <img src="images/gallery/pic12.jpg" alt="Mandarmani">
-               
-            </div>
-
-            <div class="slide-item" style=" background-size: cover;">
-            	 <img src="images/gallery/pic10.jpg" alt="Mandarmani">
-                
-            </div>
-            <div class="slide-item" style=" background-size: cover;">
-            	 <img src="images/gallery/pic11.jpg" alt="Mandarmani">
-                
-            </div>
-           
-          </div>
-      
-    
-    </div>
-
-
-    </section>-->
-    <!-- End Bnner Section -->
 
 <section style="width: 100vw;">
-   <div class="map-full" style="background-color: #12114a;">
+   <div class="map-full" style="background-color: transparent;">
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14833.211948712278!2d87.667256!3d21.652068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8617e2ecd08a4c2e!2sSun%20City%20Resort%20Mandarmani!5e0!3m2!1sen!2sin!4v1577480038473!5m2!1sen!2sin" width="600" height="300" frameborder="0" style="width:100vw; border:0px solid #222; background-color: #12114a;" allowfullscreen=""></iframe>
 
+  </div>
+
+
+  <span class="float-text">Way to Mandarmani</span>
+  <div class="jumbotron row location-details" style="background-color: transparent;">
+  	<div class="reachlocation-info col-lg-4" style="text-align: center;">
+  		<div class="img-box" style="font-size: 50px; text-align: center;"><i class="fas fa-bus-alt"></i></div>
+  		<span class="sec-title">Nearest Bus Stand</span>
+  		<span class="text"><br>
+
+							Chowlkhola Bus Stand. 	<br>
+							Distance: 1.1 km (By auto) <br>
+								</span>
+  	</div>
+  	<div class="reachlocation-info col-lg-4" style="text-align: center;">
+  		<div class="img-box" style="font-size: 50px; text-align: center; "><i class="fas fa-plane-departure"></i></div>
+  		<span class="sec-title">Nearest Airport</span>
+  		<span class="text"><br>Kolkata Airport <br>	
+						Distance: 184 km <br>
+						Time: 3.5 hours <br>
+							Taxis/Cabs/Buses
+  				
+
+					
+
+  		</span>
+  	</div>
+  	<div class="reachlocation-info col-lg-4" style="text-align: center;">
+  		<div class="img-box" style="font-size: 50px; text-align: center;"><i class="fas fa-train"></i></div>
+  		<span class="sec-title">Nearest Railway Station</span>
+  		<span class="text"> <br>Digha Railway Station <br>		
+					Distance: 34.4 km <br>
+						Time: 1.5 hours
+
+		</span>
+  	</div>
   </div>
 
  </section>
@@ -2235,7 +2280,7 @@ ul.speakers-type-list .speakers-active:hover li{
                                 <div class="inner-box">
                                     <div class="text">Purto tollit ei vix. No consul nullam sit. Pri elit nobis constituto eu. At nam habeo inani dicunt, nec vero aperiri ut, vis primis dolorum.</div>
                                     <div class="info-box">
-                                        <div class="thumb"><img src="images/resource/testi-thumb.jpg" alt=""></div>
+                                        <div class="thumb"><img src="" alt=""></div>
                                         <h5 class="name">David Kovalev</h5>
                                         <span class="designation">Marketing Analyses</span>
                                         <div class="rating">
@@ -2253,7 +2298,7 @@ ul.speakers-type-list .speakers-active:hover li{
                                 <div class="inner-box">
                                     <div class="text">Purto tollit ei vix. No consul nullam sit. Pri elit nobis constituto eu. At nam habeo inani dicunt, nec vero aperiri ut, vis primis dolorum.</div>
                                     <div class="info-box">
-                                        <div class="thumb"><img src="images/resource/testi-thumb.jpg" alt=""></div>
+                                        <div class="thumb"><img src="" alt=""></div>
                                         <h5 class="name">David Kovalev</h5>
                                         <span class="designation">Marketing Analyses</span>
                                         <div class="rating">
@@ -2271,7 +2316,7 @@ ul.speakers-type-list .speakers-active:hover li{
                                 <div class="inner-box">
                                     <div class="text">Purto tollit ei vix. No consul nullam sit. Pri elit nobis constituto eu. At nam habeo inani dicunt, nec vero aperiri ut, vis primis dolorum.</div>
                                     <div class="info-box">
-                                        <div class="thumb"><img src="images/resource/testi-thumb.jpg" alt=""></div>
+                                        <div class="thumb"><img src="" alt=""></div>
                                         <h5 class="name">David Kovalev</h5>
                                         <span class="designation">Marketing Analyses</span>
                                         <div class="rating">
@@ -2346,76 +2391,7 @@ ul.speakers-type-list .speakers-active:hover li{
     </section>
     <!--End Sponsor Section -->
 
-    <!-- News Section -->
-   <!--  <section class="news-section style-two">
-        <div class="anim-icons">
-            <span class="icon icon-circle-9"></span>
-            <span class="icon icon-twist-line-3"></span>
-        </div>
-        <span class="float-text">Latest News</span>
-        <div class="auto-container">
-            <div class="sec-title">
-                <h2>Latest News</h2>
-            </div>
-
-            <div class="row"> -->
-                <!-- News block --> 
-                <!-- <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><a href="blog-single.html"><img src="images/resource/news-1.jpg" alt=""></a></figure>
-                        </div>
-                        <div class="lower-content">
-                            <div class="info-box">
-                                <span class="date">19- JAN- 2019</span>
-                                <span class="author">Jamie Ashbrook</span>
-                            </div>
-                            <h4><a href="blog-single.html">Why Lead Generation Is Key For Business Growth.</a></h4>
-                            <div class="text">Te probo omnis clita mea. In suas singulis consectetuer sed, vim fugit homero labores </div>
-                            <div class="link-box"><a href="blog-single.html"><span class="fa fa-angle-right"></span>Read More</a></div>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- News block --> 
-                <!-- <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><a href="blog-single.html"><img src="images/resource/news-2.jpg" alt=""></a></figure>
-                        </div>
-                        <div class="lower-content">
-                            <div class="info-box">
-                                <span class="date">19- JAN- 2019</span>
-                                <span class="author">Jamie Ashbrook</span>
-                            </div>
-                            <h4><a href="blog-single.html">How To Increase In-App Purchases In 2019.</a></h4>
-                            <div class="text">Te probo omnis clita mea. In suas singulis consectetuer sed, vim fugit homero labores </div>
-                            <div class="link-box"><a href="blog-single.html"><span class="fa fa-angle-right"></span>Read More</a></div>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- News block --> 
-                <!-- <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><a href="blog-single.html"><img src="images/resource/news-3.jpg" alt=""></a></figure>
-                        </div>
-                        <div class="lower-content">
-                            <div class="info-box">
-                                <span class="date">19- JAN- 2019</span>
-                                <span class="author">Jamie Ashbrook</span>
-                            </div>
-                            <h4><a href="blog-single.html">Voxburner Launches Youth Trends Report 2018.</a></h4>
-                            <div class="text">Te probo omnis clita mea. In suas singulis consectetuer sed, vim fugit homero labores </div>
-                            <div class="link-box"><a href="blog-single.html"><span class="fa fa-angle-right"></span>Read More</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- News Section -->
+   
 
     <!-- Main Footer -->
     <div class="main-footer" id="footer">    
@@ -2426,11 +2402,95 @@ ul.speakers-type-list .speakers-active:hover li{
             <span class="icon icon-circle-8 wow zoomIn" data-wow-delay="1200ms"></span>
         </div>
         <div class="auto-container">
-            <div class="sec-title text-center light">
-                <!--<span class="title">TechX</span>-->
-                <h2 style="font-weight: lighter;">Tech<font style="font-family: sans-serif; font-size: 40px; font-weight: bold;">X</font></h2>
-                <p style="color: #fff;">Kolkata Section Computer Society Students and Young Professional Congress</p>
-            </div>
+        	<div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6" style="color: #fff;">
+            <h2 style="font-weight: lighter;color: #fff;" >Tech<font style="font-family: sans-serif; font-size: 40px; font-weight: bold;">X</font></h2>
+            <p class="text-justify" style="color: #fff;">Kolkata Section Computer Society Students and Young Professional Congress</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6 style="color: #f20487;font-size: 28px;">Contacts</h6>
+            <ul class="footer-links">
+              <li><a href="">Saptarshi Ghosh </a></li>
+              <li><a href="">Organising Co-Chair</a></li>
+              <li><a href="">+91 98361 05125</a></li>
+              <li><a href=""></a></li>
+              <li><a href="">Animesh Datta</a></li>
+              <li><a href="">Organising Co-Chair</a></li>
+              <li><a href="">+91 85849 70760</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6 style="color: #f20487;font-size: 28px;">Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#spk">Speakers</a></li>
+              <li><a href="#sch">Event Tracks</a></li>
+              <li><a href="#reg">Register</a></li>
+              <li><a href="#spns">Sponsors</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons row">
+              <li style="padding-right: 12px;"><a class="facebook" href="https://www.facebook.com/techX.congress/"><i class="fa fa-facebook"></i></a></li>
+              <li style="padding-right: 12px;"><a class="instagram" href="https://www.instagram.com/techx_ieee/"><i class="fa fa-instagram"></i></a></li>
+              
+              <li><a class="Mail" href="mailto:techx.congress@gmail.com"><i class="fa fa-envelope"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+
+        	<!--<div class="row">
+        		<div class="cntact-us col-lg-4 description-data">
+        			<div class="sec-title text-center light">
+                		
+                		<h2 style="font-weight: lighter;">Tech<font style="font-family: sans-serif; font-size: 40px; font-weight: bold;">X</font></h2>
+                		<p style="color: #fff;">Kolkata Section Computer Society Students and Young Professional Congress</p>
+                    </div>
+
+        		</div>
+        		<div class="cntact-us col-lg-4 contact-us-data">
+        			<div class="contact-info-sec" style="color: #fff;">
+        				 <br>
+						Saptarshi Ghosh <br>
+						Organising Co-Chair <br>
+						+91 98361 05125 <br>
+
+						Animesh Datta <br>
+						Organising Co-Chair <br>
+						+91 85849 70760 <br>
+        			</div>
+        			
+        			<div class="social-links-data">
+                		<ul>
+                   			 <li><a href="https://www.facebook.com/techX.congress/"><span class="fab fa-facebook-f"></span></a></li>
+                    
+                    		 <li><a href="https://www.instagram.com/techx_ieee/"><span class="fab fa-instagram"></span></a></li>
+                             <li><a href="mailto:techx.congress@gmail.com"><span class="fa fa-envelope"></span></a></li>
+                        </ul>
+                    </div>
+        		</div>
+        		<div class="cntact-us col-lg-4 page-links">
+        			  <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#sch">Schedule</a></li>
+                    <li><a href="#speakers-section">Speakers</a></li>
+                    <li><a href="#spns">Sponsors</a></li>
+                   
+                </ul>  
+        		</div>-->
+        	</div>
+            
 
             <!--Newsletter Form-->
             <!--<div class="newsletter-form">
@@ -2442,29 +2502,9 @@ ul.speakers-type-list .speakers-active:hover li{
                 </form>
             </div>-->
 
-            <!-- Social Links -->
-            <div class="social-links">
-                <ul>
-                    <li><a href="https://www.facebook.com/techX.congress/"><span class="fab fa-facebook-f"></span></a></li>
-                    <!--<li><a href="#"><span class="fab fa-twitter"></span></a></li>-->
-                    <!--<li><a href="#"><span class="fab fa-dribbble"></span></a></li>-->
-                    <li><a href="https://www.instagram.com/techx_ieee/"><span class="fab fa-instagram"></span></a></li>
-                    <li><a href="mailto:techx.congress@gmail.com"><span class="fa fa-envelope"></span></a></li>
-                </ul>
-            </div>
+           
 
 
-            <!-- Footer Nav -->
-            <div class="footer-nav">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#sch">Schedule</a></li>
-                    <li><a href="#speakers-section">Speakers</a></li>
-                    <li><a href="#spns">Sponsors</a></li>
-                    <!--<li><a href="#">Schedule</a></li>-->
-                    <!--<li><a href="#">Venue</a></li>-->
-                </ul>                                  
-            </div>
 
             <!-- Copyright -->
             <div class="copyright">Copyright &copy; 2019. All Rights Reserved.</div>
