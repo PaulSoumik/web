@@ -32,6 +32,166 @@ body{
 
 
 
+
+
+
+
+/*----our team section-------*/
+	.Team-container{
+	margin-top: 20px;
+	margin-bottom: 30px;
+    background: transparent;
+}
+.Team-container .col-lg-3{
+
+}
+.our-team{
+    text-align: center;
+    margin-bottom: 25px;
+    -webkit-box-shadow: 9px 9px 12px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 9px 9px 12px -6px rgba(0,0,0,0.75);
+	box-shadow: 9px 9px 12px -6px rgba(0,0,0,0.75);
+	border: 0.5px solid #dedede;
+	border-radius: 0.433rem;
+	
+
+}
+.Team-container .our-team .team_img{
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 0.433rem;
+    border-top-right-radius: 0.433rem;
+}
+.Team-container .our-team .team_img:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.2);
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+.Team-container .our-team:hover .team_img:after{
+    bottom: 0;
+}
+.Team-container .our-team img{
+    width: 100%;
+    height: auto;
+}
+.Team-container .our-team .social{
+    padding: 0 0 18px 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    top: -100%;
+    right: 10px;
+    background: #f20487;
+    border-radius: 0 0 20px 20px;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.Team-container .our-team:hover .social{
+    top: 0;
+}
+.Team-container .our-team .social li a{
+    display: block;
+    padding: 15px;
+    font-size: 15px;
+    color: #fff;
+}
+.Team-container .our-team:hover .social li a:hover{
+    color: #2a4284;
+}
+.Team-container .our-team .team-content{
+    padding: 20px 0;
+    background: #fff;
+    border-radius: 0.433rem;
+
+}
+.Team-container .our-team .team-content::before{
+	content: "";
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 40%;
+	background-color: 
+}
+.Team-container .our-team .title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #f2048a;
+    text-transform: capitalize;
+    margin: 0 0 20px;
+    position: relative;
+}
+.Team-container .our-team .title:before{
+    content: "";
+    width: 25px;
+    height: 1px;
+    background: #4b1ece;
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+    margin-right: 9px;
+    transition-duration: 0.25s;
+}
+.Team-container .our-team .title:after{
+    content: "";
+    width: 25px;
+    height: 1px;
+    background: #4b1ece;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: 9px;
+    transition-duration: 0.25s;
+}
+.Team-container .our-team:hover .title:before,
+.Team-container .our-team:hover .title:after{
+    width: 50px;
+}
+.Team-container .our-team .post{
+    display: inline-block;
+    font-size: 15px;
+    color:  #11124a;
+    text-transform: capitalize;
+}
+.Team-container .our-team .post:before{
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #4b1ece;
+    margin: 0 auto;
+    position: relative;
+    top: -13px;
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+}
+
+
+
+
+
+
+/*-----end team section-----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .location-details .reachlocation-info .img-box i{
 	background: linear-gradient(35deg,#f20a87, #4b1ece);
   -webkit-background-clip: text;
@@ -287,6 +447,51 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------CS-IEEE-------------------
+.cs-ieee:before{
+	height: 100%;
+	width: 60%;
+	content: "";
+	display: block;
+	background-color: rgba(100,100,100,0.3);
+	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+	position: absolute;
+	z-index: -1;
+	left: 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .pricing-section.style-four .pricing-block .query-on-hover{
 	cursor: text;
 	display: none;
@@ -314,7 +519,7 @@ body{
 
 }
 .pricing-section.style-four .pricing-block::before{
-	content: "Early Bird(till 7th JAN)";
+	content: "Early Bird(till 7th Jan)";
 	font-size: 12px;
 	height: 90px;
 	width: 60px;
@@ -594,7 +799,7 @@ body{
 
 .banner-section{
 	width: 100vw;
-	background:linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.7)),url(images/gallery/background.svg) ,linear-gradient(to left , #12114a , #12114a); background-size: cover;
+	background:linear-gradient(to bottom , rgba(0, 0, 0,0.3) , rgba( 0, 0, 0,0.7)),url(images/gallery/background.svg) ,linear-gradient(to left , #12114a , #12114a); background-size: 120%;
 	background-attachment: fixed;
 	height: 100vh !important;
 	overflow: hidden;
@@ -1157,8 +1362,9 @@ ul.speakers-type-list .speakers-active:hover li{
                     	<div class="logo"><a href="#"><img src="images/logo-techx.png" height="40" width="130" alt="" title=""></a></div>
                     </div>
                     <br>
-                    <span class="init-dialogue Lower" style="text-decoration: unset; padding-left: 35px;">Technology. Leadership. Innovation.<br></span>
-                    <span class="init-dialogue Lower" style="text-decoration: unset; padding-left: 25px; color: #fff;">#cityofJoy | #ieeeTechX<br></span>
+                    <span class="init-dialogue Lower" style="text-decoration: unset; padding-left: 25px; color: #fff;">Eastern India Techno-Management Summit<br></span>
+                    <span class="init-dialogue Lower" style="text-decoration: unset; padding-left: 35px;">28th February - 1st March 2020<br></span>
+                    
                    	
                    	<div class="nav-outer clearfix">
                     
@@ -1218,7 +1424,7 @@ ul.speakers-type-list .speakers-active:hover li{
                     <span class="text">Eastern India Techno-Management Summit</span>
                     <br>
                     <span class="init-content-dialogue Lower" style="text-decoration: unset;font-size: 18px; color: #f2048a;">Technology. Leadership. Innovation.<br></span>
-                    <span class="init-content-dialogue Lower" style="text-decoration: unset; padding-left: 5px; font-size: 15px; color: #fff;">#cityofJoy | #ieeeTechX<br></span>
+                    <span class="init-content-dialogue Lower" style="text-decoration: unset; padding-left: 5px; font-size: 15px; color: #fff;"><br></span>
     	</div>
 
     </section>
@@ -1420,11 +1626,11 @@ ul.speakers-type-list .speakers-active:hover li{
                         </div>
 
                         
-                       <!-- <div class="content-details" id="">
+                       <div class="content-details cs-ieee" id="">
                             <div class="row">
                             	<div class="image-column col-lg-6 col-md-12 col-sm-12">
                                     <div class="inner-column">
-                                        <figure class="image"><img src="images/clients/3.png" alt=""></figure>
+                                        <figure class="image"><img src="images/clients/cs-logo-2.png" alt=""></figure>
                                     </div>
                                 </div>
                                 <div class="content-column col-lg-6 col-md-12 col-sm-12">
@@ -1439,7 +1645,7 @@ ul.speakers-type-list .speakers-active:hover li{
                                 </div>
                                 
                             </div>
-                        </div>-->
+                        </div>
 
                         
                         
@@ -1757,7 +1963,7 @@ ul.speakers-type-list .speakers-active:hover li{
                             <a href="#popup_3" class="link view-speaker ts-image-popup" data-effect="mfp-zoom-in"><span class="flaticon-add-1"></span></a>
                             <div class="info">
                                 <h5 class="name"><a href="#">Megha Ben</a></h5>
-                                <span class="designation">Technical Sales Support Professional at Siemens</span>
+                                <span class="designation">Vice Chair IEEE CS MGA Board for Student and Young Professional Activities</span>
                             </div>
                         </div>
                     </div>
@@ -1774,9 +1980,9 @@ ul.speakers-type-list .speakers-active:hover li{
                             <div class="col-lg-6">
                                 <div class="ts-speaker-popup-content">
                                     <h3 class="ts-title">Megha Ben</h3>
-                                    <span class="speakder-designation">Technical Sales Support Professional at Siemens</span>
+                                    <span class="speakder-designation">Vice Chair IEEE CS MGA Board for Student and Young Professional Activities</span>
                                     <p>
-                                       Megha Ben is currently working as a Technical Sales Support Professional with the Proposal Management Team at Siemens - Digital Industries.She has been a pro-active member of IEEE since 2014 and has served in various volunteering roles at student branch, section, council and regional levels. 
+                                       Megha Ben, Vice Chair IEEE CS MGA Board for Student and Young Professional Activities , is working as a Technical Sales Support Professional with the Proposal Management Team at Siemens - Digital Industries.She has been a pro-active member of IEEE since 2014 and has served in various volunteering roles at student branch, section, council and regional levels. 
                                     </p>
                                     <h4 class="session-name">
                                         Sessions by Megha
@@ -2350,14 +2556,14 @@ ul.speakers-type-list .speakers-active:hover li{
         <div class="auto-container">
         	<span class="float-text">Sponsors</span>
         	<div class="sec-title">
-                <h2>Our Sponsors</h2>
+                <h2>Our Sponsors / Partners</h2>
             </div>
             <div class="row">
                 <div class="client-logo col-lg-3 col-md-6 col-sm-12">
                     <figure class="image"><a href="http://ewh.ieee.org/r10/calcutta/"><img src="images/clients/IEEE_kol_logo.png" width="200" height="70" alt="IEEE Kolkata Section"></a></figure>
                 </div>
                 <div class="client-logo col-lg-3 col-md-6 col-sm-12">
-                    <figure class="image"><a href="https://www.computer.org/"><img src="images/clients/3.png" width="200" height="70" alt="IEEE Computer Society"></a></figure>
+                    <figure class="image"><a href="https://www.computer.org/"><img src="images/clients/cs-logo-2.png" width="200" height="70" alt="IEEE Computer Society"></a></figure>
                 </div>
                 <!--<div class="client-logo col-lg-3 col-md-6 col-sm-12">
                     <figure class="image"><a href="#"><img src="images/clients/4.png" width="200" height="70" alt=""></a></figure>
@@ -2372,13 +2578,13 @@ ul.speakers-type-list .speakers-active:hover li{
                     <figure class="image"><a href="https://www.townscript.com/"><img src="images/clients/4.png" width="200" height="70" alt="Townscript"></a></figure>
                 </div>
                  <div class="client-logo col-lg-3 col-md-6 col-sm-12">
-                    <figure class="image"><a href="https://software.intel.com/en-us/"><img src="images/clients/intel.png" width="200" height="70" style="" alt="Townscript"></a></figure>
+                    <figure class="image"><a href="https://software.intel.com/en-us/"><img src="images/clients/intel.png" width="200" height="70" style="" alt="Intel Software"></a></figure>
                 </div>
 		<div class="client-logo col-lg-3 col-md-6 col-sm-12">
-                    <figure class="image"><a href="https://www.cisco.com/"><img src="images/clients/cisco.png" width="200" height="70" style="" alt="Townscript"></a></figure>
+                    <figure class="image"><a href="https://www.cisco.com/"><img src="images/clients/cisco.png" width="200" height="70" style="" alt="CISCO"></a></figure>
                 </div>
 		<div class="client-logo col-lg-3 col-md-6 col-sm-12">
-                    <figure class="image"><a href="https://www.globalshapers.org/"><img src="images/clients/global.png" width="200" height="70" style="" alt="Townscript"></a></figure>
+                    <figure class="image"><a href="https://www.globalshapers.org/"><img src="images/clients/global.png" width="200" height="70" style="" alt="Globalshapers"></a></figure>
                 </div>
                 <!--<div class="client-logo col-lg-3 col-md-6 col-sm-12">
                     <figure class="image"><a href="#"><img src="images/clients/3-7.png" alt=""></a></figure>
@@ -2390,6 +2596,354 @@ ul.speakers-type-list .speakers-active:hover li{
         </div>
     </section>
     <!--End Sponsor Section -->
+
+
+
+
+
+
+
+    <!--Our team section-->
+
+    <section class="Team-container">
+    	<div class="auto-container">
+    		<span class="float-text">Our Team</span>
+    		<div class="sec-title">
+    			<h2>Our Team</h2>
+    		</div>
+       		<div class="row">
+            	<div class="col-md-3 col-sm-6">
+               		<div class="our-team">
+                    	<div class="team_img">
+                        	<img src="images/team/Soumya-Kashyap.jpg">
+                        	<ul class="social">
+                            	<li><a href="https://www.facebook.com/soumya.kashyap.5249"><i class="fa fa-facebook"></i></a></li>
+                            
+                            	<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            	
+                        	</ul>
+                    	</div>
+                    	<div class="team-content">
+                        	<h3 class="title">Soumya Kashyap</h3>
+                        	<span class="post">Programme Chair</span>
+                    	</div>
+                	</div>
+            	</div>
+ 
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Saptarshi-Ghosh.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                          
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Saptarshi Ghosh</h3>
+                        <span class="post">Organising Chairperson</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/ANIMESH.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Animesh Datta</h3>
+                        <span class="post">Organising Chairperson</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Abhishek_singh.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Abhishek Singh</h3>
+                        <span class="post">Technical co-lead</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/mainak.jpg">
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/mainak.pal.5"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Mainak Pal</h3>
+                        <span class="post">Technical co-lead</span>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Tamoghno.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Tamoghno Das</h3>
+                        <span class="post">Design co-lead</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Ishani.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Ishani Nag</h3>
+                        <span class="post">Design co-lead</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Soumya.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Soumya Deep Roy</h3>
+                        <span class="post">Design co-lead</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Amitava.jpg">
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/profile.php?id=100006949692977"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Amitava Das</h3>
+                        <span class="post">Sponsorship Co-Lead</span>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Mayank-Agarwal.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Mayank Agarwal</h3>
+                        <span class="post">Sponsorship Co-Lead</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/monsij.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Monsij Biswal</h3>
+                        <span class="post">Registration Co-Lead</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Rohan-Mitra.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Rohan Mitra</h3>
+                        <span class="post">Registration Co-Lead</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Yogesh.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Yogesh Chandra Prasad</h3>
+                        <span class="post">Publicity and outreach co-lead</span>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Subhadeep-Chandra.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                          
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Subhadeep Chandra</h3>
+                        <span class="post">Publicity and outreach co-lead</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Madan_Gopal_Tiwary.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                          
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Madan Gopal Tiwary</h3>
+                        <span class="post">Venue & Hospitality Lead</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Prateekee2.jpg" style="opacity: 0.85;">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Prateekee Chatterjee</h3>
+                        <span class="post">Content Co-lead</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="team_img">
+                        <img src="images/team/Gangesh_Shaw.jpg">
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Gangesh Shaw</h3>
+                        <span class="post">Logistics co-lead</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    	</div>
+	</section>
+    		
+    <!--end Our team section-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    
 
@@ -2782,7 +3336,7 @@ $('.button').on('click', function() {
 
 		xpos = e.pageX;
 		ypos = e.pageY;
-		$(".banner-section").css("background-position",-xpos/26+"px "+"-"+ypos/20+"px")
+		$(".banner-section").css("background-position",-xpos/26+"px "+"-"+0+"px")
 	})
 </script>
 </body>
